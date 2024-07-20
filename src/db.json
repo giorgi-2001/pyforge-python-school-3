@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "smiles": "CN1CCC[C@H]1C2=CN=CC=C2",
+        "name": "Nicotine"
+    },
+    {
+        "id": 1,
+        "smiles": "C(C(=O)O)C(CC(=O)O)(C(=O)O)O",
+        "name": "Citric acid"
+    },
+    {
+        "name": "N-methyl-D-aspartate",
+        "smiles": "CNC(CC(=O)O)C(=O)O",
+        "id": 2
+    },
+    {
+        "name": "acetylsalicylic acid (aspirin)",
+        "smiles": "CC(=O)OC1=CC=CC=C1C(=O)O",
+        "id": 2
+    }
+]
