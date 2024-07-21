@@ -1,5 +1,6 @@
 from rdkit import Chem
 from fastapi import FastAPI, HTTPException, UploadFile
+from models import MolRecord
 import json
 
 
@@ -27,14 +28,23 @@ def substructure_search(mol_records, mol):
     result = []
     query_mol = Chem.MolFromSmiles(mol)
 
-    if not query_mol:
-        raise HTTPException(status_code=400, detail="Invalid SMILES format")
-
     for record in mol_records:
-        mol = Chem.MolFromSmiles(record["smiles"])
+        mol = Chem.MolFromSmiles(record.get("smiles"))
         if mol.HasSubstructMatch(query_mol):
             result.append(record)
     return result
+
+
+def auto_increment(db):
+    id = 0
+    if db:
+        id = db[-1].get("id") + 1
+    return id
+
+
+def valid_smiles(smiles):
+    mol = Chem.MolFromSmiles(smiles)
+    return bool(mol)
 
 
 
@@ -43,31 +53,26 @@ app = FastAPI()
 
 
 @app.post("/api/v1/molecules", tags=["Molecule Routes"], status_code=201)
-def add_molecule(molecule: dict):
+def add_molecule(molecule: MolRecord):
     '''
     Adds a new record of a molecule to the database:
-    - Requires a **molecule dictionary**.
-    - The **molecule dictionary** must contain the **name** attribute, which is the trivial name of the molecule.
-    - The **molecule dictionary** must contain the **smiles** attribute, which is the SMILES expression of the molecule.
+    - Requires a **molecule object**.
+    - The **molecule object** must contain the **name** attribute, which is the trivial name of the molecule.
+    - The **molecule object** must contain the **smiles** attribute, which is the SMILES expression of the molecule.
     - The **id** for the molecule is generated automatically.
     - The request returns the newly created **molecule dictionary** as the response.
     '''
-
-    invalid_molecule = not molecule.get("name") or not molecule.get("smiles")
-    if invalid_molecule:
-        raise HTTPException(status_code=400, detail="Invalid molecule format")
     
-    invalid_smiles = not Chem.MolFromSmiles(molecule.get("smiles"))
-    if invalid_smiles:
+    if not valid_smiles(molecule.smiles): 
         raise HTTPException(status_code=400, detail="Invalid SMILES format")
     
+    mol_record = molecule.model_dump()
+
     # Automatic ID generation
     # If database is empty starting ID will be 0, else ID will increase by 1
-    id = 0 if not molecule_db else molecule_db[-1].get("id") + 1
-    molecule["id"] = id
-
-    molecule_db.append(molecule)
-    return molecule
+    mol_record["id"] = auto_increment(molecule_db)
+    molecule_db.append(mol_record)
+    return mol_record
 
 
 
@@ -84,7 +89,12 @@ def get_molecules_by_substructure(substructure: str):
     - If no such molecules exist in the database, an **empty list** will be returned.
     - If the provided substructure does not have a valid **SMILES** format, an HTTPException will be raised.
     '''
+    if not valid_smiles(substructure): 
+        raise HTTPException(status_code=400, detail="Invalid SMILES format")
+    
     return substructure_search(molecule_db, substructure)
+
+        
     
 
 
@@ -117,22 +127,17 @@ def get_molecule_by_id(id: int):
 
 
 @app.put("/api/v1/molecules/{id}", tags=["Molecule Routes"])
-def update_molecule(id: int, molecule: dict):
+def update_molecule(id: int, molecule: MolRecord):
     '''
     Updates record of a molecule:
-    - Requires valid **molecule dictionary** and molecule **id**.
+    - Requires valid **molecule object** and molecule **id**.
     - The request will attempt to find the molecule based on the provided **id**.
     - If the molecule exists, it will be **replaced** by the provided **molecule dictionary**
     - Response will return the updated record.
     - If the molecule does not exist, an HTTPException will be raised.
     '''
 
-    invalid_molecule = not molecule.get("smiles") or not molecule.get("name")
-    if invalid_molecule:
-        raise HTTPException(status_code=400, detail="Invalid molecule format")
-    
-    invalid_smiles = not Chem.MolFromSmiles(molecule.get("smiles"))
-    if invalid_smiles:
+    if not valid_smiles(molecule.smiles): 
         raise HTTPException(status_code=400, detail="Invalid SMILES format")
 
     molecule_found = False
@@ -140,9 +145,10 @@ def update_molecule(id: int, molecule: dict):
     for index, mol in enumerate(molecule_db):
         if mol["id"] == id:
             molecule_found = True
-            molecule["id"] = id
-            molecule_db[index] = molecule
-            return molecule
+            mol_record = molecule.model_dump()
+            mol_record["id"] = id
+            molecule_db[index] = mol_record
+            return mol_record
     else:
         if not molecule_found:
             raise HTTPException(status_code=404, detail="Molecule does not exist")
@@ -217,11 +223,10 @@ async def upload_file(file: UploadFile):
     parsed_data = json.loads(content)
 
     for mol_record in parsed_data:
-        invalid_smiles = not Chem.MolFromSmiles(mol_record.get("smiles"))
-        if invalid_smiles:
+        if not valid_smiles(mol_record.get("smiles")): 
             raise HTTPException(status_code=400, detail="Invalid SMILES format")
         
-        id = 0 if not molecule_db else molecule_db[-1].get("id") + 1 # Automatic ID generation
+        id = auto_increment(molecule_db) # Automatic ID generation
         mol_record["id"] = id
         molecule_db.append(mol_record)
 
