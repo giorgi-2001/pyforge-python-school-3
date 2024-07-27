@@ -47,9 +47,7 @@ def valid_smiles(smiles):
     return bool(mol)
 
 
-
 app = FastAPI()
-
 
 
 @app.post("/api/v1/molecules", tags=["Molecule Routes"], status_code=201)
@@ -62,10 +60,8 @@ def add_molecule(molecule: MolRecord):
     - The **id** for the molecule is generated automatically.
     - The request returns the newly created **molecule dictionary** as the response.
     '''
-    
     if not valid_smiles(molecule.smiles): 
         raise HTTPException(status_code=400, detail="Invalid SMILES format")
-    
     mol_record = molecule.model_dump()
 
     # Automatic ID generation
@@ -73,9 +69,6 @@ def add_molecule(molecule: MolRecord):
     mol_record["id"] = auto_increment(molecule_db)
     molecule_db.append(mol_record)
     return mol_record
-
-
-
 
 
 # Try with Guanidino group - C(=N)N
@@ -91,16 +84,9 @@ def get_molecules_by_substructure(substructure: str):
     '''
     if not valid_smiles(substructure): 
         raise HTTPException(status_code=400, detail="Invalid SMILES format")
-    
     return substructure_search(molecule_db, substructure)
 
         
-    
-
-
-
-
-
 @app.get("/api/v1/molecules/{id}", tags=["Molecule Routes"])
 def get_molecule_by_id(id: int):
     '''
@@ -111,20 +97,11 @@ def get_molecule_by_id(id: int):
     - If the molecule exists, it will be returned in the response.
     - If the molecule does not exist, an HTTPException will be raised.
     '''
-    
-    molecule_found = False
-
     for mol in molecule_db:
         if mol["id"] == id:
-            molecule_found = True
             return mol
-    else:
-        if not molecule_found:
-            raise HTTPException(status_code=404, detail="Molecule does not exist")
+    raise HTTPException(status_code=404, detail="Molecule does not exist")
         
-
-
-
 
 @app.put("/api/v1/molecules/{id}", tags=["Molecule Routes"])
 def update_molecule(id: int, molecule: MolRecord):
@@ -136,25 +113,16 @@ def update_molecule(id: int, molecule: MolRecord):
     - Response will return the updated record.
     - If the molecule does not exist, an HTTPException will be raised.
     '''
-
     if not valid_smiles(molecule.smiles): 
         raise HTTPException(status_code=400, detail="Invalid SMILES format")
 
-    molecule_found = False
-
     for index, mol in enumerate(molecule_db):
         if mol["id"] == id:
-            molecule_found = True
             mol_record = molecule.model_dump()
             mol_record["id"] = id
             molecule_db[index] = mol_record
             return mol_record
-    else:
-        if not molecule_found:
-            raise HTTPException(status_code=404, detail="Molecule does not exist")
-
-
-
+    raise HTTPException(status_code=404, detail="Molecule does not exist")
 
 
 @app.delete("/api/v1/molecules/{id}", tags=["Molecule Routes"])
@@ -166,22 +134,13 @@ def delete_molecule(id: int):
     - If the molecule exists, it will be **deleted** and the response will confirm the deletion.
     - If the molecule does not exist, an HTTPException will be raised.
     '''
-
-    molecule_found = False
-
     for index, mol in enumerate(molecule_db):
         if mol["id"] == id:
             molecule_found = True
             molecule_db.pop(index)
             return mol
-    else:
-        if not molecule_found:
-            raise HTTPException(status_code=404, detail="Molecule does not exist")
+    raise HTTPException(status_code=404, detail="Molecule does not exist")
         
-
-
-
-
 
 @app.get("/api/v1/molecules", tags=["Molecule Routes"])
 def get_molecules(skip: int=0, limit: int | None = None):
@@ -191,16 +150,12 @@ def get_molecules(skip: int=0, limit: int | None = None):
     - Returns all molecules if no parameter was provided
     - Returns **slice** of the molecule database if any of the parameters is provided
     '''
-
     return molecule_db[skip : skip + (limit or len(molecule_db))]
-
-
 
 
 # For testing this route there is a db.json file in src directory
 @app.post("/api/v1/molecules/file", tags=["Molecule Routes"])
 async def upload_file(file: UploadFile):
-
     '''
     Takes a JSON file as an input and adds its content to the **molecule database**
     - File upload only work with JSON string format\n
@@ -217,7 +172,6 @@ async def upload_file(file: UploadFile):
             "name": "Creatine"
         }]
     '''
-
     content = await file.read()
     await file.close()
     parsed_data = json.loads(content)
@@ -229,5 +183,4 @@ async def upload_file(file: UploadFile):
         id = auto_increment(molecule_db) # Automatic ID generation
         mol_record["id"] = id
         molecule_db.append(mol_record)
-
     return molecule_db
