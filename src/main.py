@@ -2,6 +2,7 @@ from rdkit import Chem
 from fastapi import FastAPI, HTTPException, UploadFile
 from models import MolRecord
 import json
+from os import getenv
 
 
 molecule_db = [
@@ -48,6 +49,11 @@ def valid_smiles(smiles):
 
 
 app = FastAPI()
+
+
+@app.get("/")
+def get_server():
+    return {"server_id": getenv("SERVER_ID", "1")}
 
 
 @app.post("/api/v1/molecules", tags=["Molecule Routes"], status_code=201)
