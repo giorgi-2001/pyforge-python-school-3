@@ -1,7 +1,8 @@
 from rdkit import Chem
 from fastapi import FastAPI, HTTPException, UploadFile
-from models import MolRecord
+from .models import MolRecord
 import json
+from os import getenv
 
 
 molecule_db = [
@@ -42,12 +43,19 @@ def auto_increment(db):
     return id
 
 
-def valid_smiles(smiles):
+def valid_smiles(smiles: str):
+    if not smiles: # cheking for empty string
+        return False
     mol = Chem.MolFromSmiles(smiles)
     return bool(mol)
 
 
 app = FastAPI()
+
+
+@app.get("/")
+def get_server():
+    return {"server_id": getenv("SERVER_ID", "1")}
 
 
 @app.post("/api/v1/molecules", tags=["Molecule Routes"], status_code=201)
@@ -172,9 +180,12 @@ async def upload_file(file: UploadFile):
             "name": "Creatine"
         }]
     '''
-    content = await file.read()
-    await file.close()
-    parsed_data = json.loads(content)
+    try:
+        content = await file.read()
+        await file.close()
+        parsed_data = json.loads(content)
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=400, detail="Invalid JSON")
 
     for mol_record in parsed_data:
         if not valid_smiles(mol_record.get("smiles")): 
