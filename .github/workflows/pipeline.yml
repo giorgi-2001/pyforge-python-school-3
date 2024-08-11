@@ -48,7 +48,7 @@ jobs:
         run: docker-compose -f docker-compose.yml up -d
 
       - name: Run tests in Docker container
-        run: docker-compose exec -T app pytest tests --maxfail=1 --disable-warnings
+        run: docker-compose exec -T app pytest ./tests --maxfail=1 --disable-warnings
 
       - name: Shut down Docker Compose
         run: docker-compose down
