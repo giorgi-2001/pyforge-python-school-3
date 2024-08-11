@@ -85,7 +85,9 @@ def setup_function():
     molecule_db.clear()
 
 
-@pytest.mark.skipif(os.getenv("SERVER_ID") is None, reason="Running tests localy")
+@pytest.mark.skipif(
+        os.getenv("SERVER_ID") is None,
+        reason="Running tests localy")
 def test_get_server():
     response = client.get("/")
     assert response.status_code == 200
