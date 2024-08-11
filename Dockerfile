@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-COPY mols.json .
-
 RUN pip install -r requirements.txt
 
 COPY ./src ./src

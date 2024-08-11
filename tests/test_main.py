@@ -5,6 +5,7 @@ from src.main import (app, molecule_db, auto_increment,
 from src.models import MolRecord
 import json
 from io import BytesIO
+import os
 
 
 empty_db = []
@@ -130,8 +131,14 @@ def test_delete_molecule():
     assert response.json() == nicotine["with_id"]
 
 
-def test_upload_file():
-    with open("../mols.json", "rb") as file:
+@pytest.fixture
+def file_path():
+    return os.path.join(os.getcwd(), 'mols.json')
+
+
+def test_upload_file(file_path):
+    # path = os.path.join(os.getcwd(), 'mols.json')
+    with open("./tests/mols.json", "rb") as file:
         response = client.post("/api/v1/molecules/file", files={
             "file": ("molecules", file, "application/json")
         })
