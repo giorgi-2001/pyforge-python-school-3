@@ -85,10 +85,11 @@ def setup_function():
     molecule_db.clear()
 
 
+@pytest.mark.skipif(os.getenv("SERVER_ID") is None, reason="Running tests localy")
 def test_get_server():
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"server_id": "1"}
+    assert response.json() == {"server_id": "SERVER-1"}
 
 
 def test_get_molecules():
@@ -131,13 +132,7 @@ def test_delete_molecule():
     assert response.json() == nicotine["with_id"]
 
 
-@pytest.fixture
-def file_path():
-    return os.path.join(os.getcwd(), 'mols.json')
-
-
-def test_upload_file(file_path):
-    # path = os.path.join(os.getcwd(), 'mols.json')
+def test_upload_file():
     with open("./tests/mols.json", "rb") as file:
         response = client.post("/api/v1/molecules/file", files={
             "file": ("molecules", file, "application/json")
