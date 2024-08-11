@@ -1,18 +1,20 @@
 version: '3.8'
 services:
   web1:
-    build: ./src
+    build: .
     container_name: web1
     volumes:
-      - ./src:/src/app
+      - ./src:/app/src
+      - ./tests:/app/tests
     environment:
       SERVER_ID: SERVER-1
 
   web2:
-    build: ./src
+    build: .
     container_name: web2
     volumes:
-      - ./src:/src/app
+      - ./src:/app/src
+      - ./tests:/app/tests
     environment:
       SERVER_ID: SERVER-2
 

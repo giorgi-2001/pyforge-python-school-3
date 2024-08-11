@@ -1,6 +1,7 @@
 import pytest
 from fastapi.testclient import TestClient
-from src.main import app, molecule_db, auto_increment, valid_smiles, substructure_search
+from src.main import (app, molecule_db, auto_increment,
+                      valid_smiles, substructure_search)
 from src.models import MolRecord
 import json
 from io import BytesIO
@@ -17,9 +18,9 @@ def test_auto_increment(input, expected):
 
 
 @pytest.mark.parametrize(
-        "input, expected", 
+        "input, expected",
         [("C(=N)C", True), ("&@", False), ("", False)]
-    )
+        )
 def test_valid_smiles(input, expected):
     assert valid_smiles(input) == expected
 
@@ -54,10 +55,10 @@ def test_mol_record(aspirin):
     assert aspirin.smiles == "CC(=O)OC1=CC=CC=C1C(=O)O"
 
 
-
 # Testing API Routes
 
 client = TestClient(app)
+
 
 nicotine = {
     "original": {
@@ -130,7 +131,7 @@ def test_delete_molecule():
 
 
 def test_upload_file():
-    with open("../db.json", "rb") as file:
+    with open("../mols.json", "rb") as file:
         response = client.post("/api/v1/molecules/file", files={
             "file": ("molecules", file, "application/json")
         })
@@ -138,7 +139,7 @@ def test_upload_file():
     assert response.json() == molecule_db
 
 
-# Testing 404 Exeptions 
+# Testing 404 Exeptions
 
 def test_get_molecule_by_id_with_404_exeption():
     response = client.get("/api/v1/molecules/1")
@@ -164,9 +165,11 @@ def test_get_molecules_by_substructure_with_pydantic_exeption():
     response = client.get("/api/v1/molecules/search")
     assert response.status_code == 422
 
+
 def test_add_molecule_with_pydantic_exeption():
     response = client.post("/api/v1/molecules", json={})
     assert response.status_code == 422
+
 
 def test_update_molecule_with_pydantic_exeption():
     response = client.put("/api/v1/molecules/0", json={})
