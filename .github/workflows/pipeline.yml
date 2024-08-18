@@ -34,7 +34,7 @@ jobs:
           pip install flake8 
 
       - name: Run Flake8 in src
-        run: flake8 src
+        run: flake8 src --exclude=migration
 
       - name: Run Flake8 in test
         run: flake8 tests

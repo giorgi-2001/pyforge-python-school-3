@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY requirements.txt .
 
+COPY alembic.ini .
+
 RUN pip install -r requirements.txt
 
 COPY ./src ./src
