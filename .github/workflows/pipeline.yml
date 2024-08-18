@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DB_URI: ${{ secrets.DATABASE_URL }}
 
     services:
       docker:
@@ -63,7 +63,7 @@ jobs:
     needs: run-tests
 
     env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DB_URI: ${{ secrets.DATABASE_URL }}
 
     if: github.event_name == 'pull_request'
 
