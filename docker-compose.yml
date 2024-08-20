@@ -4,7 +4,7 @@ services:
     build: ./src
     container_name: web1
     volumes:
-      - ./src:/src
+      - ./src:/src/app
     environment:
       SERVER_ID: SERVER-1
 
@@ -12,7 +12,7 @@ services:
     build: ./src
     container_name: web2
     volumes:
-      - ./src:/src
+      - ./src:/src/app
     environment:
       SERVER_ID: SERVER-2
 
