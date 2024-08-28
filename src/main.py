@@ -21,8 +21,6 @@ async def log_events(request: Request, call_next):
     async for chunk in response.body_iterator:
         response_body += chunk
 
-    json_str = response_body.decode()
-
     process_time = time.time() - start_time
 
     log = LogFactory(
@@ -34,13 +32,15 @@ async def log_events(request: Request, call_next):
     )
 
     if response.status_code >= 400:
+        json_str = response_body.decode()
         msg_obj: dict = json.loads(json_str)
         log.set_message(msg_obj.get("detail"))
         logger.error(log.message_log)
     elif response.status_code < 400 and request.method != "GET":
-        json_str = response_body.decode()
-        msg_obj: dict = json.loads(json_str)
-        log.set_message(msg_obj.get("message"))
+        if response_body:
+            json_str = response_body.decode()
+            msg_obj: dict = json.loads(json_str)
+            log.set_message(msg_obj.get("message"))
         logger.info(log.message_log)
     else:
         logger.info(log.base_log)

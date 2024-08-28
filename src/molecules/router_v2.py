@@ -137,7 +137,8 @@ async def upload_file(file: UploadFile, dao: dao_dependencie):
         parsed_data = json.loads(content)
         valid_data = [MoleculeAdd(**mol) for mol in parsed_data]
         instances = [mol.model_dump() for mol in valid_data]
-        return await dao.add_many_molecules(instances)
+        await dao.add_many_molecules(instances)
+        return {"message": "File was processed. Molecules were uploaded."}
     except json.JSONDecodeError:
         raise HTTPException(
             status.HTTP_400_BAD_REQUEST,
