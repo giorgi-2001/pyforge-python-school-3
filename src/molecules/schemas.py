@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field, field_validator, conint
+from pydantic import BaseModel, Field, field_validator
 from datetime import datetime
 from rdkit import Chem
 from typing import List
@@ -34,6 +34,7 @@ class MoleculeResponse(BaseModel):
     created_at: datetime
     updated_at: datetime
 
+
 class PaginationData(BaseModel):
     molecule_count: int
     current_page: int
@@ -45,4 +46,3 @@ class PaginationData(BaseModel):
 class MolResWithPagination(BaseModel):
     pagination_data: PaginationData
     molecules: List[MoleculeResponse]
-

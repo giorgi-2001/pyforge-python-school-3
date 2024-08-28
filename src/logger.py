@@ -1,5 +1,6 @@
 import logging
 
+
 logger = logging.getLogger("Event logger")
 
 
@@ -37,14 +38,14 @@ class LogFactory:
         self._path = path
         self._process_time = process_time
         self._message = message
-    
+
     @property
     def base_log(self):
-        return(
+        return (
             f"{self._status_code}\t{self._ip_adress}\t"
             f"{self._method}\t{self._path}\t{round(self._process_time, 3)}"
         )
-    
+
     @property
     def message_log(self):
         return (
@@ -52,7 +53,6 @@ class LogFactory:
             f"{self._method}\t{self._path}\t{round(self._process_time, 3)}\n"
             f"\t/-- {self._message} --/\n"
         )
-    
+
     def set_message(self, message: str):
         self._message = message
-    

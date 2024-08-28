@@ -1,6 +1,8 @@
-from fastapi import APIRouter, HTTPException, status, UploadFile, Depends, Query
+from fastapi import (
+    APIRouter, HTTPException, status,
+    UploadFile, Depends, Query
+)
 from rdkit import Chem
-from ..logger import logger
 from .dao import MoleculeDAO
 from .schemas import (
     MoleculeAdd, MoleculeResponse,
@@ -22,7 +24,6 @@ async def substructure_search(mol_list: AsyncGenerator, smiles: str):
         mol = Chem.MolFromSmiles(record.smiles)
         if mol.HasSubstructMatch(query_mol):
             yield record
-            
 
 
 async def paginate_sub_search(
@@ -44,7 +45,7 @@ async def paginate_sub_search(
             result.append(mol)
 
         current_index += 1
-        
+
     return result
 
 
@@ -69,7 +70,7 @@ async def list_all_molecules(
     count = await dao.molecule_count()
     skip_value = (page - 1) * limit
     all_pages = math.ceil(count / limit)
-    has_next_page = page < all_pages 
+    has_next_page = page < all_pages
 
     mol_list_generator = dao.find_all_molecules(
         offset=skip_value, limit=limit
@@ -84,7 +85,6 @@ async def list_all_molecules(
 
         "molecules": [molecule async for molecule in mol_list_generator]
     }
-
 
 
 @router.get("/search")
