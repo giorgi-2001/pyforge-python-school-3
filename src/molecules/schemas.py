@@ -1,6 +1,7 @@
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, conint
 from datetime import datetime
 from rdkit import Chem
+from typing import List
 
 
 def valid_smiles(smiles: str):
@@ -32,3 +33,16 @@ class MoleculeResponse(BaseModel):
     id: int
     created_at: datetime
     updated_at: datetime
+
+class PaginationData(BaseModel):
+    molecule_count: int
+    current_page: int
+    page_count: int
+    page_size: int
+    has_next_page: bool
+
+
+class MolResWithPagination(BaseModel):
+    pagination_data: PaginationData
+    molecules: List[MoleculeResponse]
+

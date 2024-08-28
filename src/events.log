@@ -1,0 +1,37 @@
+2024-08-24 17:08:40	ERROR	& is invalid SMILES
+2024-08-24 17:08:40	INFO	400	172.18.0.6	GET	/api/v2/molecules/search	0.085
+2024-08-24 17:11:40	INFO	400	172.18.0.6	GET	/api/v2/molecules/search	0.066
+2024-08-24 17:11:40	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.066
+/-- Invalid SMILES structure --/
+2024-08-24 17:21:44	INFO	200	172.18.0.6	GET	/api/v2/molecules/	0.194
+2024-08-24 17:22:53	INFO	201	172.18.0.6	POST	/api/v2/molecules/	0.04
+	/-- Molecule 14 was added to database --/
+2024-08-24 17:24:37	INFO	201	172.18.0.6	POST	/api/v2/molecules/	0.049
+	/-- Molecule 15 was added to database --/
+2024-08-24 17:25:08	ERROR	422	172.18.0.6	POST	/api/v2/molecules/	1.078
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&&&', 'ctx': {'error': {}}}] --/
+2024-08-24 17:32:24	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.416
+	/-- Invalid SMILES structure --/
+
+2024-08-24 17:32:40	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.389
+	/-- Invalid SMILES structure --/
+
+2024-08-24 18:07:10	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.018
+	/-- Invalid SMILES structure --/
+
+2024-08-24 18:08:12	INFO	200	172.18.0.6	PUT	/api/v2/molecules/12	0.671
+	/-- Molecule 12 was updated --/
+
+2024-08-24 18:13:33	INFO	200	172.18.0.6	GET	/api/v2/molecules/search	0.772
+2024-08-24 18:14:55	INFO	200	172.18.0.6	GET	/api/v2/molecules/search	0.475
+2024-08-24 18:17:27	INFO	200	172.18.0.6	GET	/api/v2/molecules/search	0.34
+2024-08-24 18:19:05	ERROR	404	172.18.0.6	GET	/api/v2/molecules/30	0.301
+	/-- Molecule was not found --/
+
+2024-08-24 18:19:33	INFO	200	172.18.0.6	GET	/api/v2/molecules/12	0.034
+2024-08-28 10:27:41	ERROR	404	172.18.0.5	GET	/favicon.ico	0.241
+	/-- Not Found --/
+
+2024-08-28 10:34:32	INFO	200	172.18.0.5	GET	/docs	0.003
+2024-08-28 10:34:33	INFO	200	172.18.0.5	GET	/openapi.json	0.164
+2024-08-28 10:35:26	INFO	200	172.18.0.5	GET	/api/v2/molecules/search	0.879
