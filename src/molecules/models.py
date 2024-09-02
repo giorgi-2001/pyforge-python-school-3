@@ -7,6 +7,15 @@ class Molecule(Base):
     name: Mapped[str_uniq]
     smiles: Mapped[str_uniq]
 
+    def model_dump(self):
+        return {
+            "id": self.id,
+            "name": self.name,
+            "smiles": self.smiles,
+            "created_at": str(self.created_at),
+            "updated_at": str(self.updated_at)
+        }
+
     def __str__(self):
         return (
             f"{self.__class__.__name__}(id={self.id}, "

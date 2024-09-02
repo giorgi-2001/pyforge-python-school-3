@@ -10,3 +10,4 @@ alembic
 asyncpg
 aiosqlite  
 pydantic-settings
+redis

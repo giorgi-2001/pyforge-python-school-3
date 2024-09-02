@@ -9,7 +9,8 @@ from .schemas import (
     MolResWithPagination, PaginationData,
     valid_smiles
 )
-from typing import List, Annotated, AsyncGenerator
+from .redis_cache import get_cached_result, set_cache
+from typing import Annotated, AsyncGenerator
 import json
 import math
 
@@ -42,7 +43,7 @@ async def paginate_sub_search(
             break
 
         if current_index >= start_index:
-            result.append(mol)
+            result.append(mol.model_dump())
 
         current_index += 1
 
@@ -65,7 +66,7 @@ router = APIRouter()
 async def list_all_molecules(
     dao: dao_dependencie,
     page: int = Query(ge=1, default=1),
-    limit: int = Query(ge=1, le=100, default=2)
+    limit: int = Query(ge=1, le=100, default=20)
 ) -> MolResWithPagination:
     count = await dao.molecule_count()
     skip_value = (page - 1) * limit
@@ -91,8 +92,14 @@ async def list_all_molecules(
 async def get_molecules_by_substructure(
     smiles: str, dao: dao_dependencie,
     page: int = Query(ge=1, default=1),
-    limit: int = Query(ge=1, le=100, default=2)
-) -> List[MoleculeResponse]:
+    limit: int = Query(ge=1, le=100, default=20)
+) -> dict:
+    cache_key = f"search={smiles}&page={str(page)}&limit={str(limit)}"
+    cached_result = get_cached_result(cache_key)
+
+    if cached_result:
+        return {"source": "cache", "molecules": cached_result}
+
     try:
         mol_list_generator = dao.find_all_molecules()
         mol_result_generator = substructure_search(mol_list_generator, smiles)
@@ -100,7 +107,8 @@ async def get_molecules_by_substructure(
             mol_generator=mol_result_generator,
             page=page, limit=limit
         )
-        return result
+        set_cache(cache_key, result, 300)
+        return {"source": "db", "molecules": result}
     except ValueError:
         raise HTTPException(
             status.HTTP_400_BAD_REQUEST,
