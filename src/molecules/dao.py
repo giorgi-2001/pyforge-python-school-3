@@ -24,8 +24,9 @@ class MoleculeDAO:
         async with cls.session_maker() as session:
             query = select(cls.model).offset(offset).limit(limit)
             molecules = await session.execute(query)
-            for molecule in molecules.scalars().all():
+            for molecule in molecules.scalars():
                 yield molecule
+
             # return molecules.scalars().all()
 
     @classmethod
@@ -75,8 +76,9 @@ class MoleculeDAO:
                     return None
 
                 # Delete the molecule
-                await session.execute(delete(cls.model)
-                                      .filter_by(id=molecule_id))
+                await session.execute(
+                    delete(cls.model).filter_by(id=molecule_id)
+                )
 
                 await session.commit()
                 return molecule_id

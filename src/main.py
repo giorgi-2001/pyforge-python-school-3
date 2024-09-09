@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import StreamingResponse
-from .molecules.router_v1 import router as molecule_router_v1
 from .molecules.router_v2 import router as molecule_router_v2
 from .logger import logger, LogFactory
 from os import getenv
@@ -38,9 +37,7 @@ async def log_events(request: Request, call_next):
         logger.error(log.message_log)
     elif response.status_code < 400 and request.method != "GET":
         if response_body:
-            json_str = response_body.decode()
-            msg_obj: dict = json.loads(json_str)
-            log.set_message(msg_obj.get("message"))
+            log.set_message(response_body.decode())
         logger.info(log.message_log)
     else:
         logger.info(log.base_log)
@@ -54,13 +51,6 @@ async def log_events(request: Request, call_next):
 @app.get("/")
 def get_server():
     return {"server_id": getenv("SERVER_ID", "1")}
-
-
-app.include_router(
-  molecule_router_v1,
-  prefix="/api/v1/molecules",
-  tags=["Molecules v1"]
-)
 
 
 app.include_router(

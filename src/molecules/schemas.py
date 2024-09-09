@@ -44,5 +44,6 @@ class PaginationData(BaseModel):
 
 
 class MolResWithPagination(BaseModel):
+    source: str
     pagination_data: PaginationData
     molecules: List[MoleculeResponse]

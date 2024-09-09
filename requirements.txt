@@ -11,3 +11,4 @@ asyncpg
 aiosqlite  
 pydantic-settings
 redis
+celery[redis]

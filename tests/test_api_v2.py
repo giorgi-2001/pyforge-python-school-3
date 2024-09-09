@@ -1,34 +1,10 @@
-from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
+from tests.database import MockDAO, setup_function, teardown_function
 from fastapi.testclient import TestClient
-from src.molecules.models import Base
 from src.molecules.router_v2 import MoleculeDAO
 from src.main import app
-from src.molecules.redis_cache import redis_client
 from io import BytesIO
 import pytest
 import json
-
-
-DB_URL = "sqlite+aiosqlite:///:memory:"
-
-
-engine = create_async_engine(DB_URL)
-mock_async_session_maker = async_sessionmaker(engine, expire_on_commit=False)
-
-
-async def setup_function():
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
-
-
-async def teardown_function():
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.drop_all)
-    redis_client.flushall()
-
-
-class MockDAO(MoleculeDAO):
-    session_maker = mock_async_session_maker
 
 
 app.dependency_overrides[MoleculeDAO] = MockDAO
@@ -45,13 +21,25 @@ def client():
 # Testing API
 
 @pytest.mark.asyncio
-async def test_list_all_molecules(client: TestClient):
+async def test_list_all_molecules_db(client: TestClient):
     await setup_function()
+    response = client.get(BASE_URL)
+    assert response.status_code == 200
+    data = response.json()
+    assert data["molecules"] == []
+    assert data["pagination_data"] is not None
+    assert data["source"] == "database"
+
+
+@pytest.mark.asyncio
+async def test_list_all_molecules_cache(client: TestClient):
     response = client.get(BASE_URL)
     await teardown_function()
     assert response.status_code == 200
     data = response.json()
     assert data["molecules"] == []
+    assert data["pagination_data"] is not None
+    assert data["source"] == "cache"
 
 
 @pytest.mark.asyncio
@@ -59,50 +47,61 @@ async def test_add_molecule(client: TestClient):
     await setup_function()
     mol = {"name": "methane", "smiles": "C"}
     response = client.post(BASE_URL, json=mol)
-    await teardown_function()
     assert response.status_code == 201
     assert response.json() == {"message": "Molecule 1 was added to database"}
 
 
+task_result = {}
+
+
 @pytest.mark.asyncio
-async def test_get_molecules_by_substructure1(client: TestClient):
+async def test_add_search_task(client: TestClient):
     await setup_function()
     mol = {"name": "ethanol", "smiles": "CCO"}
     client.post(BASE_URL, json=mol)
-    response = client.get(BASE_URL + "/search?smiles=O")
+    response = client.post(BASE_URL + "/search?smiles=O")
     assert response.status_code == 200
-    result = response.json()
-    molecule = result.get("molecules")[0]
-    source = result.get("source")
-    assert source == "db"
-    assert molecule.get("id") == 1
-    assert molecule.get("name") == "ethanol"
-    assert molecule.get("smiles") == "CCO"
+    data = response.json()
+    task_result["task_id"] = data.get("task_id")
+    assert data["status"] == "PENDING"
 
 
 @pytest.mark.asyncio
-async def test_get_molecules_by_substructure2(client: TestClient):
-    response = client.get(BASE_URL + "/search?smiles=O")
+async def test_get_search_results(client: TestClient):
+    task_id = task_result.get("task_id")
+    response = client.get(BASE_URL + "/search/" + task_id)
     await teardown_function()
-    assert response.status_code == 200
-    result = response.json()
-    molecule = result.get("molecules")[0]
-    source = result.get("source")
-    assert source == "cache"
-    assert molecule.get("id") == 1
-    assert molecule.get("name") == "ethanol"
-    assert molecule.get("smiles") == "CCO"
+    data = response.json()
+    assert (
+        data["status"] == "Task completed" or
+        data["status"] == "Task is still processing"
+    )
+    assert data["task_id"] == task_id
 
 
 @pytest.mark.asyncio
-async def test_get_molecule_by_id(client: TestClient):
+async def test_get_molecule_by_id_db(client: TestClient):
     await setup_function()
     mol = {"name": "methane", "smiles": "C"}
     client.post(BASE_URL, json=mol)
     response = client.get(BASE_URL + "/1")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["source"] == "database"
+    methane = data.get("result")
+    assert methane.get("id") == 1
+    assert methane.get("name") == "methane"
+    assert methane.get("smiles") == "C"
+
+
+@pytest.mark.asyncio
+async def test_get_molecule_by_id_cache(client: TestClient):
+    response = client.get(BASE_URL + "/1")
     await teardown_function()
     assert response.status_code == 200
-    methane = response.json()
+    data = response.json()
+    assert data["source"] == "cache"
+    methane = data.get("result")
     assert methane.get("id") == 1
     assert methane.get("name") == "methane"
     assert methane.get("smiles") == "C"
@@ -213,7 +212,7 @@ async def test_upload_file_with_invalid_file_format(client: TestClient):
     await setup_function()
     mock_file_content = b"molecule"
     mock_file = BytesIO(mock_file_content)
-    response = client.post("/api/v1/molecules/file", files={
+    response = client.post(BASE_URL + "/file", files={
         "file": ("molecules", mock_file, "text/plain")
     })
     await teardown_function()
@@ -226,7 +225,7 @@ async def test_upload_file_with_invalid_file_format(client: TestClient):
 @pytest.mark.asyncio
 async def test_get_molecules_by_sub_invalid_smiles(client: TestClient):
     await setup_function()
-    response = client.get(BASE_URL + "/search?smiles=&&")
+    response = client.post(BASE_URL + "/search?smiles=&&")
     await teardown_function()
     assert response.status_code == 400
     assert response.json() == {"detail": "Invalid SMILES structure"}

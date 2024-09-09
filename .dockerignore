@@ -1,6 +1,6 @@
 env
-__pycache__
-.pytest_cache
+__pycache__/
+.pytest_cache/
 .env
 docker-compose.yml
 README.md
