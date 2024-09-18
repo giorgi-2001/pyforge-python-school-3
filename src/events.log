@@ -1403,3 +1403,2386 @@
 2024-09-02 11:49:18	ERROR	400	testclient	GET	/api/v2/molecules/search	0.022
 	/-- Invalid SMILES structure --/
 
+2024-09-06 11:44:21	INFO	200	172.18.0.7	GET	/docs	0.002
+2024-09-06 11:44:23	INFO	200	172.18.0.7	GET	/openapi.json	0.127
+2024-09-06 11:44:38	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.114
+	/-- None --/
+
+2024-09-06 12:01:36	INFO	200	172.18.0.7	GET	/docs	0.005
+2024-09-06 12:01:37	INFO	200	172.18.0.7	GET	/openapi.json	0.208
+2024-09-06 12:02:14	INFO	200	172.18.0.7	GET	/docs	0.002
+2024-09-06 12:02:15	INFO	200	172.18.0.7	GET	/openapi.json	0.08
+2024-09-06 12:02:23	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.195
+	/-- None --/
+
+2024-09-06 12:03:08	INFO	200	172.18.0.7	GET	/docs	0.007
+2024-09-06 12:03:08	INFO	200	172.18.0.7	GET	/openapi.json	0.129
+2024-09-06 12:03:16	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.115
+2024-09-06 12:03:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.097
+2024-09-06 12:03:59	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.003
+2024-09-06 12:04:01	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.003
+2024-09-06 12:04:15	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.107
+	/-- None --/
+
+2024-09-06 12:04:35	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.004
+2024-09-06 12:04:37	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.009
+2024-09-06 12:04:38	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.002
+2024-09-06 12:06:27	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.113
+2024-09-06 12:09:00	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.095
+	/-- None --/
+
+2024-09-06 12:11:02	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.192
+	/-- None --/
+
+2024-09-06 12:11:06	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.018
+	/-- None --/
+
+2024-09-06 12:11:15	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- None --/
+
+2024-09-06 12:11:16	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.153
+	/-- None --/
+
+2024-09-06 12:11:22	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- None --/
+
+2024-09-06 12:11:23	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- None --/
+
+2024-09-06 12:11:25	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.005
+	/-- None --/
+
+2024-09-06 12:11:36	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.006
+2024-09-06 12:12:46	INFO	200	172.18.0.7	GET	/docs	0.003
+2024-09-06 12:12:47	INFO	200	172.18.0.7	GET	/openapi.json	0.19
+2024-09-06 12:12:57	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.128
+	/-- None --/
+
+2024-09-06 12:20:02	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.182
+	/-- None --/
+
+2024-09-06 12:26:08	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.301
+	/-- None --/
+
+2024-09-06 12:33:12	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.126
+	/-- None --/
+
+2024-09-06 12:33:41	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.009
+2024-09-06 12:37:11	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.376
+	/-- None --/
+
+2024-09-06 12:38:28	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.016
+2024-09-06 12:54:46	INFO	200	172.18.0.7	GET	/docs	0.002
+2024-09-06 12:54:47	INFO	200	172.18.0.7	GET	/openapi.json	0.136
+2024-09-06 12:55:01	INFO	200	172.18.0.7	GET	/docs	0.001
+2024-09-06 12:55:02	INFO	200	172.18.0.7	GET	/openapi.json	0.002
+2024-09-06 12:55:53	INFO	200	172.18.0.7	GET	/docs	0.009
+2024-09-06 12:55:53	INFO	200	172.18.0.7	GET	/openapi.json	0.323
+2024-09-06 13:05:47	INFO	200	172.18.0.7	GET	/docs	0.01
+2024-09-06 13:05:48	INFO	200	172.18.0.7	GET	/openapi.json	0.15
+2024-09-06 13:07:30	INFO	200	172.18.0.7	GET	/docs	0.004
+2024-09-06 13:07:31	INFO	200	172.18.0.7	GET	/openapi.json	0.087
+2024-09-06 13:07:38	INFO	200	172.18.0.7	GET	/docs	0.002
+2024-09-06 13:07:38	INFO	200	172.18.0.7	GET	/openapi.json	0.002
+2024-09-06 13:17:34	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.34
+	/-- None --/
+
+2024-09-06 13:17:49	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.009
+2024-09-06 13:18:15	ERROR	422	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- [{'type': 'greater_than_equal', 'loc': ['query', 'page'], 'msg': 'Input should be greater than or equal to 1', 'input': '0', 'ctx': {'ge': 1}}] --/
+
+2024-09-06 13:18:27	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.211
+	/-- None --/
+
+2024-09-06 13:18:41	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.01
+2024-09-06 13:18:50	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.007
+2024-09-06 13:19:07	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.003
+2024-09-06 13:19:55	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.052
+	/-- None --/
+
+2024-09-06 13:20:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.007
+2024-09-06 13:21:42	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.017
+	/-- None --/
+
+2024-09-06 13:22:06	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.042
+	/-- None --/
+
+2024-09-06 13:22:15	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- None --/
+
+2024-09-06 13:22:19	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.015
+	/-- None --/
+
+2024-09-06 13:24:57	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.295
+	/-- None --/
+
+2024-09-06 13:28:21	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.302
+	/-- None --/
+
+2024-09-06 13:28:35	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.067
+2024-09-06 13:30:06	ERROR	400	172.18.0.7	POST	/api/v2/molecules/search	0.045
+	/-- Invalid SMILES structure --/
+
+2024-09-06 13:30:27	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.266
+	/-- None --/
+
+2024-09-06 13:37:00	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.415
+	/-- None --/
+
+2024-09-06 13:37:22	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.532
+	/-- None --/
+
+2024-09-06 13:43:09	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.346
+	/-- None --/
+
+2024-09-06 14:00:39	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	1.731
+	/-- None --/
+
+2024-09-06 14:00:54	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	1.096
+	/-- None --/
+
+2024-09-06 14:01:17	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.016
+2024-09-06 14:03:35	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.237
+	/-- None --/
+
+2024-09-06 14:04:43	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.11
+2024-09-06 14:10:36	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.163
+	/-- None --/
+
+2024-09-06 14:10:37	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.249
+	/-- None --/
+
+2024-09-06 14:10:38	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.01
+	/-- None --/
+
+2024-09-06 14:10:42	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.02
+	/-- None --/
+
+2024-09-06 14:10:42	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- None --/
+
+2024-09-06 14:10:43	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- None --/
+
+2024-09-06 14:10:43	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- None --/
+
+2024-09-06 14:11:01	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.011
+	/-- None --/
+
+2024-09-06 14:11:02	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.013
+	/-- None --/
+
+2024-09-06 14:11:02	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- None --/
+
+2024-09-06 14:11:03	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.016
+	/-- None --/
+
+2024-09-06 14:11:03	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- None --/
+
+2024-09-06 14:11:04	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.043
+	/-- None --/
+
+2024-09-06 14:11:04	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- None --/
+
+2024-09-06 14:11:05	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.011
+	/-- None --/
+
+2024-09-06 14:11:05	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.013
+	/-- None --/
+
+2024-09-06 14:11:05	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- None --/
+
+2024-09-06 14:11:06	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- None --/
+
+2024-09-06 14:11:06	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.054
+	/-- None --/
+
+2024-09-06 14:11:06	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- None --/
+
+2024-09-06 14:11:07	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- None --/
+
+2024-09-06 14:11:17	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- None --/
+
+2024-09-06 14:11:17	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- None --/
+
+2024-09-06 14:11:18	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- None --/
+
+2024-09-06 14:11:18	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.018
+	/-- None --/
+
+2024-09-06 14:11:18	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- None --/
+
+2024-09-06 14:11:18	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- None --/
+
+2024-09-06 14:11:19	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.02
+	/-- None --/
+
+2024-09-06 14:11:20	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- None --/
+
+2024-09-06 14:11:28	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- None --/
+
+2024-09-06 14:11:29	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.005
+	/-- None --/
+
+2024-09-06 14:11:29	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- None --/
+
+2024-09-06 14:11:29	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.017
+	/-- None --/
+
+2024-09-06 14:43:55	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.309
+	/-- b'{"task_id":"7b2305a3-938e-45b3-8b28-6445881d8498","status":"PENDING"}' --/
+
+2024-09-06 14:44:09	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.083
+2024-09-06 14:44:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.135
+2024-09-06 14:45:20	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.173
+	/-- {"task_id":"ffc99688-b191-4513-a9f9-a2251d91961e","status":"PENDING"} --/
+
+2024-09-06 14:45:49	ERROR	400	172.18.0.7	POST	/api/v2/molecules/search	0.271
+	/-- Invalid SMILES structure --/
+
+2024-09-06 14:47:07	ERROR	400	172.18.0.7	POST	/api/v2/molecules/search	0.031
+	/-- Invalid SMILES structure --/
+
+2024-09-06 14:47:13	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.397
+	/-- {"task_id":"fdddd01e-ff08-49fa-9976-58e759adb425","status":"PENDING"} --/
+
+2024-09-06 14:47:32	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.079
+2024-09-06 14:47:54	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.013
+	/-- {"task_id":"af56dff6-dc72-4607-96dc-e0100dfba406","status":"PENDING"} --/
+
+2024-09-06 14:48:08	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.003
+2024-09-06 15:03:13	INFO	200	172.18.0.7	GET	/docs	0.012
+2024-09-06 15:03:15	INFO	200	172.18.0.7	GET	/openapi.json	1.274
+2024-09-06 15:03:43	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.377
+	/-- {"task_id":"8287cda5-b854-49a1-9fe0-341e3f0f0ed0","status":"PENDING"} --/
+
+2024-09-06 15:03:49	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.014
+	/-- {"task_id":"0cf59986-ce6c-458d-bf3c-9934b89caa4b","status":"PENDING"} --/
+
+2024-09-06 15:07:07	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	1.158
+	/-- {"task_id":"bad360f9-7d5d-4d38-ba86-36bbb243aa65","status":"PENDING"} --/
+
+2024-09-06 15:07:12	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.046
+	/-- {"task_id":"84c950c3-049e-416c-8e22-7c75cb10b109","status":"PENDING"} --/
+
+2024-09-06 15:07:17	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	1.323
+	/-- {"task_id":"cfaded59-edc6-4760-b2bc-6d3321e42595","status":"STARTED"} --/
+
+2024-09-06 15:07:20	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.015
+	/-- {"task_id":"a675a8fc-9fdc-4009-8957-3621dc95787d","status":"PENDING"} --/
+
+2024-09-06 15:07:20	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.055
+	/-- {"task_id":"d2392739-7d34-4698-ab52-b8d9211b7318","status":"PENDING"} --/
+
+2024-09-06 15:07:21	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.023
+	/-- {"task_id":"65878122-2b50-4aca-a280-b8d1bf303d75","status":"PENDING"} --/
+
+2024-09-06 15:07:21	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.012
+	/-- {"task_id":"e225b15e-8553-4a18-b9c9-7d6d759132db","status":"PENDING"} --/
+
+2024-09-06 15:07:22	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- {"task_id":"2cb85529-5a9e-4a7e-813d-9ed5cb25fe04","status":"PENDING"} --/
+
+2024-09-06 15:07:22	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.01
+	/-- {"task_id":"e9a0c737-307e-416a-b974-a7bd1dcc2f8c","status":"PENDING"} --/
+
+2024-09-06 15:07:22	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- {"task_id":"ff3c9c5b-0b20-4aa4-a546-02710f5a3a9c","status":"PENDING"} --/
+
+2024-09-06 15:07:22	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- {"task_id":"86fe37f8-d3b8-40dc-a536-33f34af85f9d","status":"PENDING"} --/
+
+2024-09-06 15:07:23	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- {"task_id":"6ff28340-7149-4633-b644-b22aac7d2e30","status":"PENDING"} --/
+
+2024-09-06 15:07:23	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.018
+	/-- {"task_id":"45a82822-5f4a-4f74-99ee-c174f62908ba","status":"PENDING"} --/
+
+2024-09-06 15:07:44	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.024
+2024-09-06 15:22:02	INFO	200	172.18.0.7	GET	/docs	0.002
+2024-09-06 15:22:04	INFO	200	172.18.0.7	GET	/openapi.json	0.121
+2024-09-06 15:22:18	INFO	200	172.18.0.7	GET	/api/v2/molecules/	0.694
+2024-09-07 03:46:38	INFO	200	172.18.0.7	GET	/docs	0.013
+2024-09-07 03:46:40	INFO	200	172.18.0.7	GET	/openapi.json	0.132
+2024-09-07 03:46:57	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.49
+	/-- {"task_id":"4f72ed10-d26f-4b2b-85eb-26890c4b4312","status":"PENDING"} --/
+
+2024-09-07 03:47:03	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.01
+	/-- {"task_id":"3eea8844-d910-412f-8e2d-e0ac52fe669a","status":"PENDING"} --/
+
+2024-09-07 03:47:12	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.217
+	/-- {"task_id":"277d596e-ad0f-4313-ad68-155999c914a4","status":"STARTED"} --/
+
+2024-09-07 03:47:12	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.013
+	/-- {"task_id":"76f98a63-5dff-4462-8641-798aeeda8d8b","status":"PENDING"} --/
+
+2024-09-07 03:47:13	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.053
+	/-- {"task_id":"6126ba6d-fbe5-486d-bacc-c8198ac40014","status":"PENDING"} --/
+
+2024-09-07 03:47:13	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.015
+	/-- {"task_id":"7d7d4234-6277-4e29-b25c-1cfbc9f3c95d","status":"PENDING"} --/
+
+2024-09-07 03:47:13	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- {"task_id":"15bd7f23-551c-429d-8ae9-710de37312d4","status":"PENDING"} --/
+
+2024-09-07 03:47:14	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- {"task_id":"8154a2b4-c2e1-46ae-86b7-ca5a5c69417f","status":"PENDING"} --/
+
+2024-09-07 03:47:15	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.007
+	/-- {"task_id":"6a832beb-20b9-43f4-87e8-f7bc8e3f6daa","status":"PENDING"} --/
+
+2024-09-07 03:47:15	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- {"task_id":"595ef1a6-7cc0-4229-9006-a6b3a01c46be","status":"PENDING"} --/
+
+2024-09-07 03:47:15	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- {"task_id":"2fd4e5e4-3c11-48e7-9cb2-17844ce9721f","status":"PENDING"} --/
+
+2024-09-07 03:47:16	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.006
+	/-- {"task_id":"b886f316-4b7c-485e-a87c-babe3f014901","status":"PENDING"} --/
+
+2024-09-07 04:03:20	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.387
+	/-- {"task_id":"f0c5911b-39e0-422e-8c12-a5b7f8b537b9","status":"PENDING"} --/
+
+2024-09-07 04:03:24	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.138
+	/-- {"task_id":"ee915a9c-c1d2-4a08-bdf6-14a2c1164c40","status":"PENDING"} --/
+
+2024-09-07 04:03:40	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.007
+2024-09-07 04:03:45	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.014
+2024-09-07 04:16:48	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.372
+	/-- {"task_id":"549684ad-5fc2-4ad0-856b-8c485a2845b5","status":"PENDING"} --/
+
+2024-09-07 04:16:50	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.282
+	/-- {"task_id":"e9722d63-d163-409e-80a1-f4d3d62e5ff6","status":"STARTED"} --/
+
+2024-09-07 04:16:51	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.008
+	/-- {"task_id":"bb16b34e-9c26-4e46-b2e1-132d85419b1c","status":"PENDING"} --/
+
+2024-09-07 04:19:01	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.271
+	/-- {"task_id":"c2775aca-b4bc-45ac-a950-c10c1210eea0","status":"PENDING"} --/
+
+2024-09-07 04:19:02	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.013
+	/-- {"task_id":"a5498345-dcf5-4530-81ec-433ec36a7d35","status":"PENDING"} --/
+
+2024-09-07 04:19:04	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.26
+	/-- {"task_id":"37fe21aa-39f0-4f85-aa4f-0bfb06375766","status":"STARTED"} --/
+
+2024-09-07 04:19:09	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.023
+	/-- {"task_id":"33fea239-d728-4488-97b7-a7f03925c89e","status":"STARTED"} --/
+
+2024-09-07 04:19:13	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.009
+	/-- {"task_id":"acbf8d9b-9026-4ba1-83ba-bb779dae44d0","status":"PENDING"} --/
+
+2024-09-07 04:19:26	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.006
+2024-09-07 04:19:40	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.016
+	/-- {"task_id":"833e88b8-cf3e-4501-acc4-73c5b15df1a9","status":"PENDING"} --/
+
+2024-09-07 04:19:53	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.003
+2024-09-07 04:20:08	INFO	200	172.18.0.7	GET	/api/v2/molecules/	0.321
+2024-09-07 04:23:46	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.141
+	/-- {"task_id":"37ae11ac-6806-4345-a349-c1aa99c0cbf7","status":"PENDING"} --/
+
+2024-09-07 04:23:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.085
+2024-09-09 12:22:54	INFO	200	172.18.0.7	GET	/docs	0.052
+2024-09-09 12:22:58	INFO	200	172.18.0.7	GET	/openapi.json	0.443
+2024-09-09 12:25:00	INFO	200	172.18.0.7	GET	/api/v2/molecules/	0.268
+2024-09-09 12:26:11	INFO	200	172.18.0.7	GET	/api/v2/molecules/	0.013
+2024-09-09 12:26:26	INFO	200	172.18.0.7	GET	/api/v2/molecules/	0.134
+2024-09-09 12:26:38	INFO	200	172.18.0.7	GET	/api/v2/molecules/	0.026
+2024-09-09 12:27:05	ERROR	404	172.18.0.7	GET	/api/v2/molecules/1	0.033
+	/-- Molecule was not found --/
+
+2024-09-09 12:27:10	ERROR	404	172.18.0.7	GET	/api/v2/molecules/5	0.218
+	/-- Molecule was not found --/
+
+2024-09-09 12:27:52	INFO	200	172.18.0.7	GET	/api/v2/molecules/4	0.006
+2024-09-09 12:27:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/4	0.006
+2024-09-09 12:29:18	INFO	200	172.18.0.7	GET	/api/v2/molecules/6	0.014
+2024-09-09 12:31:44	INFO	200	172.18.0.7	GET	/api/v2/molecules/4	0.015
+2024-09-09 12:31:49	ERROR	404	172.18.0.7	GET	/api/v2/molecules/3	0.132
+	/-- Molecule was not found --/
+
+2024-09-09 12:31:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/10	0.003
+2024-09-09 12:34:58	INFO	200	172.18.0.7	GET	/api/v2/molecules/8	0.151
+2024-09-09 12:35:02	INFO	200	172.18.0.7	GET	/api/v2/molecules/8	0.016
+2024-09-09 12:35:05	INFO	200	172.18.0.7	GET	/api/v2/molecules/8	0.002
+2024-09-09 12:35:12	INFO	200	172.18.0.7	GET	/api/v2/molecules/7	0.003
+2024-09-09 12:35:19	INFO	200	172.18.0.7	GET	/api/v2/molecules/10	0.013
+2024-09-09 12:35:22	INFO	200	172.18.0.7	GET	/api/v2/molecules/10	0.002
+2024-09-09 12:35:25	INFO	200	172.18.0.7	GET	/api/v2/molecules/10	0.004
+2024-09-09 12:37:03	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.45
+	/-- {"task_id":"87648636-31f7-4ca8-88b7-44dd7ac323c0","status":"PENDING"} --/
+
+2024-09-09 12:37:19	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.116
+2024-09-09 12:37:24	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.003
+2024-09-09 12:38:07	INFO	200	172.18.0.7	POST	/api/v2/molecules/search	0.085
+	/-- {"task_id":"c515e13d-6653-4c44-9e2c-84cf4e7ac4bf","status":"PENDING"} --/
+
+2024-09-09 12:39:51	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/{id}	0.005
+2024-09-09 12:41:11	INFO	200	172.18.0.7	GET	/docs	0.001
+2024-09-09 12:41:12	INFO	200	172.18.0.7	GET	/openapi.json	0.116
+2024-09-09 12:41:22	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/c515e13d-6653-4c44-9e2c-84cf4e7ac4bf	0.104
+2024-09-09 12:41:30	INFO	200	172.18.0.7	GET	/api/v2/molecules/search/c515e13d-6653-4c44-9e2c-84cf4e7ac4bf	0.075
+2024-09-09 12:47:32	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 12:47:32	INFO	200	testclient	GET	/api/v2/molecules/	0.039
+2024-09-09 12:47:32	INFO	307	testclient	POST	/api/v2/molecules	0.003
+	/-- None --/
+
+2024-09-09 12:47:32	INFO	201	testclient	POST	/api/v2/molecules/	0.05
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:47:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:47:32	INFO	201	testclient	POST	/api/v2/molecules/	0.013
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:47:32	INFO	200	testclient	PUT	/api/v2/molecules/1	0.026
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 12:47:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:47:32	INFO	201	testclient	POST	/api/v2/molecules/	0.02
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:47:32	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.016
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 12:47:32	INFO	200	testclient	POST	/api/v2/molecules/file	0.049
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 12:47:32	ERROR	404	testclient	GET	/api/v2/molecules/1	0.006
+	/-- Molecule was not found --/
+
+2024-09-09 12:47:32	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.012
+	/-- Molecule was not found --/
+
+2024-09-09 12:47:32	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.013
+	/-- Molecule was not found --/
+
+2024-09-09 12:47:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:47:32	ERROR	422	testclient	POST	/api/v2/molecules/	0.006
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 12:47:33	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:47:33	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:47:33	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.079
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 12:47:33	ERROR	400	testclient	POST	/api/v2/molecules/file	0.011
+	/-- Could not parse the file data --/
+
+2024-09-09 12:47:33	ERROR	404	testclient	POST	/api/v1/molecules/file	0.001
+	/-- Not Found --/
+
+2024-09-09 12:47:33	ERROR	422	testclient	GET	/api/v2/molecules/search	0.005
+	/-- [{'type': 'int_parsing', 'loc': ['path', 'id'], 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'search'}] --/
+
+2024-09-09 12:51:49	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 12:51:50	INFO	200	testclient	GET	/api/v2/molecules/	0.045
+2024-09-09 12:51:50	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:51:50	INFO	201	testclient	POST	/api/v2/molecules/	0.059
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:51:50	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:51:50	INFO	201	testclient	POST	/api/v2/molecules/	0.032
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:51:50	INFO	200	testclient	PUT	/api/v2/molecules/1	0.031
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 12:51:50	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 12:51:50	INFO	201	testclient	POST	/api/v2/molecules/	0.008
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:51:50	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.016
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 12:51:50	INFO	200	testclient	POST	/api/v2/molecules/file	0.047
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 12:51:50	ERROR	404	testclient	GET	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 12:51:50	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.019
+	/-- Molecule was not found --/
+
+2024-09-09 12:51:50	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.024
+	/-- Molecule was not found --/
+
+2024-09-09 12:51:51	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 12:51:51	ERROR	422	testclient	POST	/api/v2/molecules/	0.009
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 12:51:51	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:51:51	INFO	201	testclient	POST	/api/v2/molecules/	0.023
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:51:51	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 12:51:51	ERROR	400	testclient	POST	/api/v2/molecules/file	0.016
+	/-- Could not parse the file data --/
+
+2024-09-09 12:51:51	ERROR	400	testclient	POST	/api/v2/molecules/file	0.014
+	/-- Invalid JSON --/
+
+2024-09-09 12:53:44	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 12:53:48	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 12:53:48	INFO	201	testclient	POST	/api/v2/molecules/	0.033
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:53:48	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:53:48	INFO	201	testclient	POST	/api/v2/molecules/	0.035
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:53:48	INFO	200	testclient	PUT	/api/v2/molecules/1	0.05
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 12:53:49	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:53:49	INFO	201	testclient	POST	/api/v2/molecules/	0.024
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:53:49	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.017
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 12:53:49	INFO	200	testclient	POST	/api/v2/molecules/file	0.026
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 12:53:49	ERROR	404	testclient	GET	/api/v2/molecules/1	0.011
+	/-- Molecule was not found --/
+
+2024-09-09 12:53:49	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-09-09 12:53:49	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.02
+	/-- Molecule was not found --/
+
+2024-09-09 12:53:49	INFO	307	testclient	POST	/api/v2/molecules	0.009
+	/-- None --/
+
+2024-09-09 12:53:49	ERROR	422	testclient	POST	/api/v2/molecules/	0.011
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 12:53:49	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:53:49	INFO	201	testclient	POST	/api/v2/molecules/	0.019
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:53:49	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.009
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 12:53:49	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Could not parse the file data --/
+
+2024-09-09 12:53:49	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-09-09 12:54:39	INFO	307	testclient	GET	/api/v2/molecules	0.003
+2024-09-09 12:54:39	INFO	200	testclient	GET	/api/v2/molecules/	0.024
+2024-09-09 12:54:39	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 12:54:39	INFO	200	testclient	GET	/api/v2/molecules/	0.005
+2024-09-09 12:54:40	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:54:40	INFO	201	testclient	POST	/api/v2/molecules/	0.026
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:54:40	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:54:40	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:54:40	INFO	200	testclient	PUT	/api/v2/molecules/1	0.017
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 12:54:40	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:54:40	INFO	201	testclient	POST	/api/v2/molecules/	0.04
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:54:40	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.021
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 12:54:40	INFO	200	testclient	POST	/api/v2/molecules/file	0.041
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 12:54:40	ERROR	404	testclient	GET	/api/v2/molecules/1	0.011
+	/-- Molecule was not found --/
+
+2024-09-09 12:54:40	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.01
+	/-- Molecule was not found --/
+
+2024-09-09 12:54:41	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.01
+	/-- Molecule was not found --/
+
+2024-09-09 12:54:41	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:54:41	ERROR	422	testclient	POST	/api/v2/molecules/	0.02
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 12:54:41	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 12:54:41	INFO	201	testclient	POST	/api/v2/molecules/	0.034
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:54:41	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.02
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 12:54:41	ERROR	400	testclient	POST	/api/v2/molecules/file	0.016
+	/-- Could not parse the file data --/
+
+2024-09-09 12:54:41	ERROR	400	testclient	POST	/api/v2/molecules/file	0.007
+	/-- Invalid JSON --/
+
+2024-09-09 12:57:21	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 12:57:21	INFO	200	testclient	GET	/api/v2/molecules/	0.027
+2024-09-09 12:57:21	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 12:57:21	INFO	200	testclient	GET	/api/v2/molecules/	0.012
+2024-09-09 12:57:21	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 12:57:21	INFO	201	testclient	POST	/api/v2/molecules/	0.046
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:57:21	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:57:21	INFO	201	testclient	POST	/api/v2/molecules/	0.017
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:57:21	INFO	200	testclient	GET	/api/v2/molecules/1	0.013
+2024-09-09 12:57:21	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:57:24	INFO	307	testclient	POST	/api/v2/molecules	0.006
+	/-- None --/
+
+2024-09-09 12:57:27	INFO	200	testclient	POST	/api/v2/molecules/file	0.117
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 12:57:27	ERROR	404	testclient	GET	/api/v2/molecules/1	0.013
+	/-- Molecule was not found --/
+
+2024-09-09 12:57:27	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.009
+	/-- Molecule was not found --/
+
+2024-09-09 12:57:27	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.024
+	/-- Molecule was not found --/
+
+2024-09-09 12:57:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:57:27	ERROR	422	testclient	POST	/api/v2/molecules/	0.016
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 12:57:28	INFO	307	testclient	POST	/api/v2/molecules	0.003
+	/-- None --/
+
+2024-09-09 12:57:28	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:57:28	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.012
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 12:57:28	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Could not parse the file data --/
+
+2024-09-09 12:57:28	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-09-09 12:58:31	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 12:58:31	INFO	200	testclient	GET	/api/v2/molecules/	0.027
+2024-09-09 12:58:31	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 12:58:31	INFO	200	testclient	GET	/api/v2/molecules/	0.003
+2024-09-09 12:58:31	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:58:31	INFO	201	testclient	POST	/api/v2/molecules/	0.053
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:58:31	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:58:31	INFO	201	testclient	POST	/api/v2/molecules/	0.036
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:58:31	INFO	200	testclient	GET	/api/v2/molecules/1	0.017
+2024-09-09 12:58:31	INFO	200	testclient	GET	/api/v2/molecules/1	0.004
+2024-09-09 12:58:31	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 12:58:31	INFO	201	testclient	POST	/api/v2/molecules/	0.02
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:58:31	INFO	200	testclient	PUT	/api/v2/molecules/1	0.014
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 12:58:31	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:58:31	INFO	201	testclient	POST	/api/v2/molecules/	0.014
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:58:31	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.015
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 12:58:31	INFO	200	testclient	POST	/api/v2/molecules/file	0.029
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 12:58:31	ERROR	404	testclient	GET	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 12:58:31	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.016
+	/-- Molecule was not found --/
+
+2024-09-09 12:58:32	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.021
+	/-- Molecule was not found --/
+
+2024-09-09 12:58:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:58:32	ERROR	422	testclient	POST	/api/v2/molecules/	0.004
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 12:58:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 12:58:32	INFO	201	testclient	POST	/api/v2/molecules/	0.012
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 12:58:32	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.005
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 12:58:32	ERROR	400	testclient	POST	/api/v2/molecules/file	0.008
+	/-- Could not parse the file data --/
+
+2024-09-09 12:58:32	ERROR	400	testclient	POST	/api/v2/molecules/file	0.01
+	/-- Invalid JSON --/
+
+2024-09-09 13:12:26	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 13:12:26	INFO	200	testclient	GET	/api/v2/molecules/	0.102
+2024-09-09 13:12:26	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 13:12:26	INFO	200	testclient	GET	/api/v2/molecules/	0.009
+2024-09-09 13:12:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:12:26	INFO	201	testclient	POST	/api/v2/molecules/	0.06
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:12:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:12:26	INFO	201	testclient	POST	/api/v2/molecules/	0.017
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:12:26	INFO	200	testclient	POST	/api/v2/molecules/search	0.157
+	/-- {"task_id":"6e2e1d91-3a5c-4672-a9b8-9cf14595a78b","status":"PENDING"} --/
+
+2024-09-09 13:12:27	INFO	200	testclient	GET	/api/v2/molecules/search/6e2e1d91-3a5c-4672-a9b8-9cf14595a78b	0.049
+2024-09-09 13:12:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:12:27	INFO	201	testclient	POST	/api/v2/molecules/	0.028
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:12:27	INFO	200	testclient	GET	/api/v2/molecules/1	0.028
+2024-09-09 13:12:27	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 13:12:27	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 13:12:27	INFO	201	testclient	POST	/api/v2/molecules/	0.024
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:12:27	INFO	200	testclient	PUT	/api/v2/molecules/1	0.03
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 13:12:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:12:27	INFO	201	testclient	POST	/api/v2/molecules/	0.025
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:12:27	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.019
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 13:12:27	INFO	200	testclient	POST	/api/v2/molecules/file	0.042
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 13:12:28	ERROR	404	testclient	GET	/api/v2/molecules/1	0.02
+	/-- Molecule was not found --/
+
+2024-09-09 13:12:28	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.025
+	/-- Molecule was not found --/
+
+2024-09-09 13:12:28	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.016
+	/-- Molecule was not found --/
+
+2024-09-09 13:12:28	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 13:12:28	ERROR	422	testclient	POST	/api/v2/molecules/	0.056
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 13:12:28	INFO	307	testclient	POST	/api/v2/molecules	0.006
+	/-- None --/
+
+2024-09-09 13:12:28	INFO	201	testclient	POST	/api/v2/molecules/	0.024
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:12:28	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.035
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 13:12:28	ERROR	400	testclient	POST	/api/v2/molecules/file	0.008
+	/-- Could not parse the file data --/
+
+2024-09-09 13:12:28	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-09-09 13:14:45	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 13:14:45	INFO	200	testclient	GET	/api/v2/molecules/	0.025
+2024-09-09 13:14:45	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 13:14:45	INFO	200	testclient	GET	/api/v2/molecules/	0.007
+2024-09-09 13:14:45	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:45	INFO	201	testclient	POST	/api/v2/molecules/	0.097
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:14:45	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:45	INFO	201	testclient	POST	/api/v2/molecules/	0.011
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:14:45	INFO	200	testclient	POST	/api/v2/molecules/search	0.074
+	/-- {"task_id":"99a0487e-a940-4f00-ba47-09b4609cdaf4","status":"PENDING"} --/
+
+2024-09-09 13:14:46	INFO	200	testclient	GET	/api/v2/molecules/search/99a0487e-a940-4f00-ba47-09b4609cdaf4	0.039
+2024-09-09 13:14:47	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:47	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:14:47	INFO	200	testclient	GET	/api/v2/molecules/1	0.017
+2024-09-09 13:14:47	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 13:14:47	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:47	INFO	201	testclient	POST	/api/v2/molecules/	0.016
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:14:47	INFO	200	testclient	PUT	/api/v2/molecules/1	0.042
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 13:14:47	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:47	INFO	201	testclient	POST	/api/v2/molecules/	0.022
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:14:47	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.01
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 13:14:47	INFO	200	testclient	POST	/api/v2/molecules/file	0.013
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 13:14:47	ERROR	404	testclient	GET	/api/v2/molecules/1	0.006
+	/-- Molecule was not found --/
+
+2024-09-09 13:14:47	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 13:14:47	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-09-09 13:14:48	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:48	ERROR	422	testclient	POST	/api/v2/molecules/	0.015
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 13:14:48	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:14:48	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:14:48	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 13:14:48	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Could not parse the file data --/
+
+2024-09-09 13:14:48	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Invalid JSON --/
+
+2024-09-09 13:22:31	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 13:22:31	INFO	200	testclient	GET	/api/v2/molecules/	0.064
+2024-09-09 13:22:31	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 13:22:31	INFO	200	testclient	GET	/api/v2/molecules/	0.03
+2024-09-09 13:22:31	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:22:31	INFO	201	testclient	POST	/api/v2/molecules/	0.065
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:22:31	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 13:22:31	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:22:32	INFO	200	testclient	POST	/api/v2/molecules/search	0.106
+	/-- {"task_id":"3fcb82ce-049a-4dcd-bc89-e7fdf15a4769","status":"PENDING"} --/
+
+2024-09-09 13:22:33	INFO	200	testclient	GET	/api/v2/molecules/search/3fcb82ce-049a-4dcd-bc89-e7fdf15a4769	0.027
+2024-09-09 13:22:33	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:22:33	INFO	201	testclient	POST	/api/v2/molecules/	0.011
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:22:33	INFO	200	testclient	GET	/api/v2/molecules/1	0.012
+2024-09-09 13:22:33	INFO	200	testclient	GET	/api/v2/molecules/1	0.004
+2024-09-09 13:22:33	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:22:33	INFO	201	testclient	POST	/api/v2/molecules/	0.029
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:22:33	INFO	200	testclient	PUT	/api/v2/molecules/1	0.031
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 13:22:33	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:22:33	INFO	201	testclient	POST	/api/v2/molecules/	0.023
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:22:33	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.018
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 13:22:33	INFO	200	testclient	POST	/api/v2/molecules/file	0.03
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 13:22:33	ERROR	404	testclient	GET	/api/v2/molecules/1	0.007
+	/-- Molecule was not found --/
+
+2024-09-09 13:22:33	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.015
+	/-- Molecule was not found --/
+
+2024-09-09 13:22:34	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.017
+	/-- Molecule was not found --/
+
+2024-09-09 13:22:34	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:22:34	ERROR	422	testclient	POST	/api/v2/molecules/	0.018
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 13:22:34	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:22:34	INFO	201	testclient	POST	/api/v2/molecules/	0.019
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:22:34	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.037
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 13:22:34	ERROR	400	testclient	POST	/api/v2/molecules/file	0.007
+	/-- Could not parse the file data --/
+
+2024-09-09 13:22:34	ERROR	400	testclient	POST	/api/v2/molecules/file	0.005
+	/-- Invalid JSON --/
+
+2024-09-09 13:23:54	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 13:23:54	INFO	200	testclient	GET	/api/v2/molecules/	0.02
+2024-09-09 13:23:54	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 13:23:54	INFO	200	testclient	GET	/api/v2/molecules/	0.016
+2024-09-09 13:23:54	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:23:54	INFO	201	testclient	POST	/api/v2/molecules/	0.026
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:23:54	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 13:23:54	INFO	201	testclient	POST	/api/v2/molecules/	0.026
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:23:54	INFO	200	testclient	POST	/api/v2/molecules/search	0.103
+	/-- {"task_id":"e16d38d1-c291-4919-b945-6d271832d365","status":"PENDING"} --/
+
+2024-09-09 13:23:55	INFO	200	testclient	GET	/api/v2/molecules/search/e16d38d1-c291-4919-b945-6d271832d365	0.016
+2024-09-09 13:23:55	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:23:55	INFO	201	testclient	POST	/api/v2/molecules/	0.031
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:23:55	INFO	200	testclient	GET	/api/v2/molecules/1	0.016
+2024-09-09 13:23:55	INFO	200	testclient	GET	/api/v2/molecules/1	0.004
+2024-09-09 13:23:55	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:23:55	INFO	201	testclient	POST	/api/v2/molecules/	0.022
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:23:55	INFO	200	testclient	PUT	/api/v2/molecules/1	0.016
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 13:23:56	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:23:56	INFO	201	testclient	POST	/api/v2/molecules/	0.011
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:23:56	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.012
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 13:23:56	INFO	200	testclient	POST	/api/v2/molecules/file	0.026
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 13:23:56	ERROR	404	testclient	GET	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 13:23:56	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.024
+	/-- Molecule was not found --/
+
+2024-09-09 13:23:56	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- Molecule was not found --/
+
+2024-09-09 13:23:56	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:23:56	ERROR	422	testclient	POST	/api/v2/molecules/	0.004
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 13:23:56	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 13:23:56	INFO	201	testclient	POST	/api/v2/molecules/	0.007
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:23:56	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.008
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 13:23:56	ERROR	400	testclient	POST	/api/v2/molecules/file	0.005
+	/-- Could not parse the file data --/
+
+2024-09-09 13:23:56	ERROR	400	testclient	POST	/api/v2/molecules/file	0.009
+	/-- Invalid JSON --/
+
+2024-09-09 13:25:11	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 13:25:11	INFO	200	testclient	GET	/api/v2/molecules/	0.033
+2024-09-09 13:25:11	INFO	307	testclient	GET	/api/v2/molecules	0.003
+2024-09-09 13:25:11	INFO	200	testclient	GET	/api/v2/molecules/	0.023
+2024-09-09 13:25:11	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:11	INFO	201	testclient	POST	/api/v2/molecules/	0.053
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:25:11	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:11	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:25:11	INFO	200	testclient	POST	/api/v2/molecules/search	0.127
+	/-- {"task_id":"bb5c020d-fb7f-40e6-bdb0-96757b0b5e88","status":"PENDING"} --/
+
+2024-09-09 13:25:12	INFO	200	testclient	GET	/api/v2/molecules/search/bb5c020d-fb7f-40e6-bdb0-96757b0b5e88	0.039
+2024-09-09 13:25:13	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:13	INFO	201	testclient	POST	/api/v2/molecules/	0.01
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:25:13	INFO	200	testclient	GET	/api/v2/molecules/1	0.015
+2024-09-09 13:25:13	INFO	200	testclient	GET	/api/v2/molecules/1	0.009
+2024-09-09 13:25:13	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:13	INFO	201	testclient	POST	/api/v2/molecules/	0.041
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:25:13	INFO	200	testclient	PUT	/api/v2/molecules/1	0.031
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 13:25:13	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:13	INFO	201	testclient	POST	/api/v2/molecules/	0.009
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:25:13	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.019
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 13:25:13	INFO	200	testclient	POST	/api/v2/molecules/file	0.022
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 13:25:13	ERROR	404	testclient	GET	/api/v2/molecules/1	0.051
+	/-- Molecule was not found --/
+
+2024-09-09 13:25:13	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.03
+	/-- Molecule was not found --/
+
+2024-09-09 13:25:14	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.041
+	/-- Molecule was not found --/
+
+2024-09-09 13:25:14	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:14	ERROR	422	testclient	POST	/api/v2/molecules/	0.015
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 13:25:14	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 13:25:14	INFO	201	testclient	POST	/api/v2/molecules/	0.013
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 13:25:14	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.014
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 13:25:14	ERROR	400	testclient	POST	/api/v2/molecules/file	0.009
+	/-- Could not parse the file data --/
+
+2024-09-09 13:25:14	ERROR	400	testclient	POST	/api/v2/molecules/file	0.02
+	/-- Invalid JSON --/
+
+2024-09-09 15:59:03	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 15:59:03	INFO	200	testclient	GET	/api/v2/molecules/	0.068
+2024-09-09 15:59:03	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 15:59:03	INFO	200	testclient	GET	/api/v2/molecules/	0.006
+2024-09-09 15:59:04	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 15:59:04	INFO	201	testclient	POST	/api/v2/molecules/	0.076
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 15:59:04	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 15:59:04	INFO	201	testclient	POST	/api/v2/molecules/	0.014
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 15:59:04	INFO	200	testclient	POST	/api/v2/molecules/search	0.1
+	/-- {"task_id":"a4b21d4c-d222-4d39-84b3-467c07ea1361","status":"PENDING"} --/
+
+2024-09-09 15:59:05	INFO	200	testclient	GET	/api/v2/molecules/search/a4b21d4c-d222-4d39-84b3-467c07ea1361	0.031
+2024-09-09 15:59:05	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 15:59:05	INFO	201	testclient	POST	/api/v2/molecules/	0.016
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 15:59:05	INFO	200	testclient	GET	/api/v2/molecules/1	0.014
+2024-09-09 15:59:05	INFO	200	testclient	GET	/api/v2/molecules/1	0.004
+2024-09-09 15:59:05	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 15:59:05	INFO	201	testclient	POST	/api/v2/molecules/	0.022
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 15:59:06	INFO	200	testclient	PUT	/api/v2/molecules/1	0.034
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 15:59:06	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 15:59:06	INFO	201	testclient	POST	/api/v2/molecules/	0.028
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 15:59:06	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.018
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 15:59:06	INFO	200	testclient	POST	/api/v2/molecules/file	0.031
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 15:59:06	ERROR	404	testclient	GET	/api/v2/molecules/1	0.006
+	/-- Molecule was not found --/
+
+2024-09-09 15:59:06	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.011
+	/-- Molecule was not found --/
+
+2024-09-09 15:59:06	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.03
+	/-- Molecule was not found --/
+
+2024-09-09 15:59:06	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 15:59:06	ERROR	422	testclient	POST	/api/v2/molecules/	0.011
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 15:59:06	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 15:59:06	INFO	201	testclient	POST	/api/v2/molecules/	0.008
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 15:59:06	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.039
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 15:59:06	ERROR	400	testclient	POST	/api/v2/molecules/file	0.007
+	/-- Could not parse the file data --/
+
+2024-09-09 15:59:07	ERROR	400	testclient	POST	/api/v2/molecules/file	0.007
+	/-- Invalid JSON --/
+
+2024-09-09 16:00:21	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:00:21	INFO	200	testclient	GET	/api/v2/molecules/	0.065
+2024-09-09 16:00:21	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:00:21	INFO	200	testclient	GET	/api/v2/molecules/	0.004
+2024-09-09 16:00:22	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:00:22	INFO	201	testclient	POST	/api/v2/molecules/	0.029
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:00:22	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 16:00:22	INFO	201	testclient	POST	/api/v2/molecules/	0.019
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:00:22	INFO	200	testclient	POST	/api/v2/molecules/search	0.094
+	/-- {"task_id":"dad3c3f5-151a-4589-a1e3-b257901d0581","status":"PENDING"} --/
+
+2024-09-09 16:00:23	INFO	200	testclient	GET	/api/v2/molecules/search/dad3c3f5-151a-4589-a1e3-b257901d0581	0.047
+2024-09-09 16:00:23	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:00:23	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:00:23	INFO	200	testclient	GET	/api/v2/molecules/1	0.01
+2024-09-09 16:00:23	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 16:00:23	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:00:23	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:00:23	INFO	200	testclient	PUT	/api/v2/molecules/1	0.035
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:00:23	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:00:24	INFO	201	testclient	POST	/api/v2/molecules/	0.023
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:00:24	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.009
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:00:24	INFO	200	testclient	POST	/api/v2/molecules/file	0.023
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:00:24	ERROR	404	testclient	GET	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-09-09 16:00:24	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.011
+	/-- Molecule was not found --/
+
+2024-09-09 16:00:24	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.024
+	/-- Molecule was not found --/
+
+2024-09-09 16:00:24	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:00:24	ERROR	422	testclient	POST	/api/v2/molecules/	0.013
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:00:24	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:00:24	INFO	201	testclient	POST	/api/v2/molecules/	0.014
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:00:24	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:00:24	ERROR	400	testclient	POST	/api/v2/molecules/file	0.01
+	/-- Could not parse the file data --/
+
+2024-09-09 16:00:24	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Invalid JSON --/
+
+2024-09-09 16:01:09	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:01:09	INFO	200	testclient	GET	/api/v2/molecules/	0.039
+2024-09-09 16:01:09	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:01:09	INFO	200	testclient	GET	/api/v2/molecules/	0.008
+2024-09-09 16:01:09	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:01:09	INFO	201	testclient	POST	/api/v2/molecules/	0.072
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:01:09	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:01:09	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:01:10	INFO	200	testclient	POST	/api/v2/molecules/search	0.119
+	/-- {"task_id":"e07ff579-edbc-46c7-978f-84940fe1f670","status":"PENDING"} --/
+
+2024-09-09 16:01:11	INFO	200	testclient	GET	/api/v2/molecules/search/e07ff579-edbc-46c7-978f-84940fe1f670	0.038
+2024-09-09 16:01:11	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:01:11	INFO	201	testclient	POST	/api/v2/molecules/	0.028
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:01:11	INFO	200	testclient	GET	/api/v2/molecules/1	0.028
+2024-09-09 16:01:11	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 16:01:11	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:01:11	INFO	201	testclient	POST	/api/v2/molecules/	0.04
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:01:12	INFO	200	testclient	PUT	/api/v2/molecules/1	0.069
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:01:12	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:01:12	INFO	201	testclient	POST	/api/v2/molecules/	0.038
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:01:12	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.029
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:01:12	INFO	200	testclient	POST	/api/v2/molecules/file	0.036
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:01:12	ERROR	404	testclient	GET	/api/v2/molecules/1	0.023
+	/-- Molecule was not found --/
+
+2024-09-09 16:01:12	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.027
+	/-- Molecule was not found --/
+
+2024-09-09 16:01:12	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.036
+	/-- Molecule was not found --/
+
+2024-09-09 16:01:13	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:01:13	ERROR	422	testclient	POST	/api/v2/molecules/	0.017
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:01:13	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:01:13	INFO	201	testclient	POST	/api/v2/molecules/	0.017
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:01:13	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.012
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:01:13	ERROR	400	testclient	POST	/api/v2/molecules/file	0.009
+	/-- Could not parse the file data --/
+
+2024-09-09 16:01:13	ERROR	400	testclient	POST	/api/v2/molecules/file	0.016
+	/-- Invalid JSON --/
+
+2024-09-09 16:10:12	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:10:12	INFO	200	testclient	GET	/api/v2/molecules/	0.13
+2024-09-09 16:10:12	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:10:12	INFO	200	testclient	GET	/api/v2/molecules/	0.019
+2024-09-09 16:10:12	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:10:12	INFO	201	testclient	POST	/api/v2/molecules/	0.068
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:10:12	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:10:12	INFO	201	testclient	POST	/api/v2/molecules/	0.013
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:10:12	INFO	200	testclient	POST	/api/v2/molecules/search	0.164
+	/-- {"task_id":"d7f8b0db-705b-400f-a079-cff069544a5b","status":"PENDING"} --/
+
+2024-09-09 16:10:13	INFO	200	testclient	GET	/api/v2/molecules/search/d7f8b0db-705b-400f-a079-cff069544a5b	0.064
+2024-09-09 16:10:14	INFO	307	testclient	POST	/api/v2/molecules	0.005
+	/-- None --/
+
+2024-09-09 16:10:14	INFO	201	testclient	POST	/api/v2/molecules/	0.033
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:10:14	INFO	200	testclient	GET	/api/v2/molecules/1	0.025
+2024-09-09 16:10:14	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 16:10:15	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:10:15	INFO	201	testclient	POST	/api/v2/molecules/	0.135
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:10:15	INFO	200	testclient	PUT	/api/v2/molecules/1	0.074
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:10:15	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:10:15	INFO	201	testclient	POST	/api/v2/molecules/	0.032
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:10:15	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.029
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:10:15	INFO	200	testclient	POST	/api/v2/molecules/file	0.05
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:10:15	ERROR	404	testclient	GET	/api/v2/molecules/1	0.013
+	/-- Molecule was not found --/
+
+2024-09-09 16:10:15	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.009
+	/-- Molecule was not found --/
+
+2024-09-09 16:10:16	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.03
+	/-- Molecule was not found --/
+
+2024-09-09 16:10:16	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:10:16	ERROR	422	testclient	POST	/api/v2/molecules/	0.012
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:10:16	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:10:16	INFO	201	testclient	POST	/api/v2/molecules/	0.012
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:10:16	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.026
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:10:16	ERROR	400	testclient	POST	/api/v2/molecules/file	0.014
+	/-- Could not parse the file data --/
+
+2024-09-09 16:10:16	ERROR	400	testclient	POST	/api/v2/molecules/file	0.007
+	/-- Invalid JSON --/
+
+2024-09-09 16:11:26	INFO	307	testclient	GET	/api/v2/molecules	0.003
+2024-09-09 16:11:26	INFO	200	testclient	GET	/api/v2/molecules/	0.063
+2024-09-09 16:11:26	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:11:26	INFO	200	testclient	GET	/api/v2/molecules/	0.012
+2024-09-09 16:11:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:11:26	INFO	201	testclient	POST	/api/v2/molecules/	0.04
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:11:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:11:27	INFO	201	testclient	POST	/api/v2/molecules/	0.031
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:11:27	INFO	200	testclient	POST	/api/v2/molecules/search	0.205
+	/-- {"task_id":"3e0f7120-a4d7-47b1-8ef8-353b9eb712f8","status":"PENDING"} --/
+
+2024-09-09 16:11:28	INFO	200	testclient	GET	/api/v2/molecules/search/3e0f7120-a4d7-47b1-8ef8-353b9eb712f8	0.023
+2024-09-09 16:11:28	INFO	307	testclient	POST	/api/v2/molecules	0.013
+	/-- None --/
+
+2024-09-09 16:11:28	INFO	201	testclient	POST	/api/v2/molecules/	0.02
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:11:28	INFO	200	testclient	GET	/api/v2/molecules/1	0.013
+2024-09-09 16:11:28	INFO	200	testclient	GET	/api/v2/molecules/1	0.018
+2024-09-09 16:11:29	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:11:29	INFO	201	testclient	POST	/api/v2/molecules/	0.064
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:11:29	INFO	200	testclient	PUT	/api/v2/molecules/1	0.075
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:11:29	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:11:29	INFO	201	testclient	POST	/api/v2/molecules/	0.065
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:11:29	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.046
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:11:29	INFO	200	testclient	POST	/api/v2/molecules/file	0.045
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:11:29	ERROR	404	testclient	GET	/api/v2/molecules/1	0.024
+	/-- Molecule was not found --/
+
+2024-09-09 16:11:29	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.021
+	/-- Molecule was not found --/
+
+2024-09-09 16:11:30	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.041
+	/-- Molecule was not found --/
+
+2024-09-09 16:11:30	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:11:30	ERROR	422	testclient	POST	/api/v2/molecules/	0.009
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:11:30	INFO	307	testclient	POST	/api/v2/molecules	0.01
+	/-- None --/
+
+2024-09-09 16:11:30	INFO	201	testclient	POST	/api/v2/molecules/	0.019
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:11:30	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.034
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:11:30	ERROR	400	testclient	POST	/api/v2/molecules/file	0.012
+	/-- Could not parse the file data --/
+
+2024-09-09 16:11:30	ERROR	400	testclient	POST	/api/v2/molecules/file	0.018
+	/-- Invalid JSON --/
+
+2024-09-09 16:12:27	INFO	307	testclient	GET	/api/v2/molecules	0.003
+2024-09-09 16:12:27	INFO	200	testclient	GET	/api/v2/molecules/	0.068
+2024-09-09 16:12:27	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:12:27	INFO	200	testclient	GET	/api/v2/molecules/	0.016
+2024-09-09 16:12:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:12:27	INFO	201	testclient	POST	/api/v2/molecules/	0.031
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:12:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:12:27	INFO	201	testclient	POST	/api/v2/molecules/	0.012
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:12:27	INFO	200	testclient	POST	/api/v2/molecules/search	0.101
+	/-- {"task_id":"5dd8d754-d62e-42c9-8de2-fa45c6eb4110","status":"PENDING"} --/
+
+2024-09-09 16:12:28	INFO	200	testclient	GET	/api/v2/molecules/search/5dd8d754-d62e-42c9-8de2-fa45c6eb4110	0.051
+2024-09-09 16:12:29	INFO	307	testclient	POST	/api/v2/molecules	0.004
+	/-- None --/
+
+2024-09-09 16:12:29	INFO	201	testclient	POST	/api/v2/molecules/	0.023
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:12:29	INFO	200	testclient	GET	/api/v2/molecules/1	0.023
+2024-09-09 16:12:29	INFO	200	testclient	GET	/api/v2/molecules/1	0.016
+2024-09-09 16:12:29	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:12:29	INFO	201	testclient	POST	/api/v2/molecules/	0.056
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:12:29	INFO	200	testclient	PUT	/api/v2/molecules/1	0.045
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:12:29	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:12:29	INFO	201	testclient	POST	/api/v2/molecules/	0.025
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:12:29	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.024
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:12:29	INFO	200	testclient	POST	/api/v2/molecules/file	0.07
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:12:30	ERROR	404	testclient	GET	/api/v2/molecules/1	0.019
+	/-- Molecule was not found --/
+
+2024-09-09 16:12:30	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 16:12:30	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.031
+	/-- Molecule was not found --/
+
+2024-09-09 16:12:30	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:12:30	ERROR	422	testclient	POST	/api/v2/molecules/	0.013
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:12:30	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:12:30	INFO	201	testclient	POST	/api/v2/molecules/	0.024
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:12:30	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.012
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:12:30	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Could not parse the file data --/
+
+2024-09-09 16:12:30	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-09-09 16:13:06	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:13:06	INFO	200	testclient	GET	/api/v2/molecules/	0.044
+2024-09-09 16:13:06	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:13:06	INFO	200	testclient	GET	/api/v2/molecules/	0.031
+2024-09-09 16:13:06	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:06	INFO	201	testclient	POST	/api/v2/molecules/	0.03
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:06	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:06	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:13:07	INFO	200	testclient	POST	/api/v2/molecules/search	0.16
+	/-- {"task_id":"ce423b66-d04b-48c1-b04d-590a5ddea1cb","status":"PENDING"} --/
+
+2024-09-09 16:13:07	INFO	200	testclient	GET	/api/v2/molecules/search/ce423b66-d04b-48c1-b04d-590a5ddea1cb	0.083
+2024-09-09 16:13:07	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:07	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:07	INFO	200	testclient	GET	/api/v2/molecules/1	0.008
+2024-09-09 16:13:07	INFO	200	testclient	GET	/api/v2/molecules/1	0.007
+2024-09-09 16:13:07	INFO	307	testclient	POST	/api/v2/molecules	0.003
+	/-- None --/
+
+2024-09-09 16:13:07	INFO	201	testclient	POST	/api/v2/molecules/	0.022
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:07	INFO	200	testclient	PUT	/api/v2/molecules/1	0.03
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:13:08	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:08	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:08	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.013
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:13:08	INFO	200	testclient	POST	/api/v2/molecules/file	0.022
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:13:08	ERROR	404	testclient	GET	/api/v2/molecules/1	0.009
+	/-- Molecule was not found --/
+
+2024-09-09 16:13:08	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 16:13:08	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.02
+	/-- Molecule was not found --/
+
+2024-09-09 16:13:08	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:08	ERROR	422	testclient	POST	/api/v2/molecules/	0.015
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:13:08	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:08	INFO	201	testclient	POST	/api/v2/molecules/	0.022
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:08	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.01
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:13:08	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Could not parse the file data --/
+
+2024-09-09 16:13:08	ERROR	400	testclient	POST	/api/v2/molecules/file	0.005
+	/-- Invalid JSON --/
+
+2024-09-09 16:13:38	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:13:38	INFO	200	testclient	GET	/api/v2/molecules/	0.043
+2024-09-09 16:13:38	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:13:38	INFO	200	testclient	GET	/api/v2/molecules/	0.016
+2024-09-09 16:13:38	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:38	INFO	201	testclient	POST	/api/v2/molecules/	0.032
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:38	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:39	INFO	201	testclient	POST	/api/v2/molecules/	0.014
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:13:39	INFO	200	testclient	POST	/api/v2/molecules/search	0.065
+	/-- {"task_id":"6e5c2153-6e4a-4c9d-8670-85880d4dae63","status":"PENDING"} --/
+
+2024-09-09 16:13:39	INFO	200	testclient	GET	/api/v2/molecules/search/6e5c2153-6e4a-4c9d-8670-85880d4dae63	0.051
+2024-09-09 16:13:39	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:39	INFO	201	testclient	POST	/api/v2/molecules/	0.029
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:39	INFO	200	testclient	GET	/api/v2/molecules/1	0.021
+2024-09-09 16:13:39	INFO	200	testclient	GET	/api/v2/molecules/1	0.009
+2024-09-09 16:13:39	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:39	INFO	201	testclient	POST	/api/v2/molecules/	0.04
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:39	INFO	200	testclient	PUT	/api/v2/molecules/1	0.035
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:13:39	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:39	INFO	201	testclient	POST	/api/v2/molecules/	0.012
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:39	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:13:40	INFO	200	testclient	POST	/api/v2/molecules/file	0.027
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:13:40	ERROR	404	testclient	GET	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-09-09 16:13:40	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 16:13:40	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.034
+	/-- Molecule was not found --/
+
+2024-09-09 16:13:40	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:13:40	ERROR	422	testclient	POST	/api/v2/molecules/	0.01
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:13:40	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:13:40	INFO	201	testclient	POST	/api/v2/molecules/	0.01
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:13:40	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.008
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:13:40	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Could not parse the file data --/
+
+2024-09-09 16:13:40	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Invalid JSON --/
+
+2024-09-09 16:14:07	INFO	307	testclient	GET	/api/v2/molecules	0.003
+2024-09-09 16:14:07	INFO	200	testclient	GET	/api/v2/molecules/	0.04
+2024-09-09 16:14:07	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:14:07	INFO	200	testclient	GET	/api/v2/molecules/	0.022
+2024-09-09 16:14:07	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:14:07	INFO	201	testclient	POST	/api/v2/molecules/	0.033
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:14:07	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 16:14:07	INFO	201	testclient	POST	/api/v2/molecules/	0.009
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:14:07	INFO	200	testclient	POST	/api/v2/molecules/search	0.07
+	/-- {"task_id":"07b0b668-5f53-440b-93af-194a5e821d9d","status":"PENDING"} --/
+
+2024-09-09 16:14:07	INFO	200	testclient	GET	/api/v2/molecules/search/07b0b668-5f53-440b-93af-194a5e821d9d	0.033
+2024-09-09 16:14:08	INFO	307	testclient	POST	/api/v2/molecules	0.003
+	/-- None --/
+
+2024-09-09 16:14:08	INFO	201	testclient	POST	/api/v2/molecules/	0.036
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:14:08	INFO	200	testclient	GET	/api/v2/molecules/1	0.015
+2024-09-09 16:14:08	INFO	200	testclient	GET	/api/v2/molecules/1	0.003
+2024-09-09 16:14:08	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:14:08	INFO	201	testclient	POST	/api/v2/molecules/	0.04
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:14:08	INFO	200	testclient	PUT	/api/v2/molecules/1	0.034
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:14:08	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:14:08	INFO	201	testclient	POST	/api/v2/molecules/	0.011
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:14:08	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.008
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:14:08	INFO	200	testclient	POST	/api/v2/molecules/file	0.021
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:14:08	ERROR	404	testclient	GET	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-09-09 16:14:09	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.016
+	/-- Molecule was not found --/
+
+2024-09-09 16:14:09	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.02
+	/-- Molecule was not found --/
+
+2024-09-09 16:14:09	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:14:09	ERROR	422	testclient	POST	/api/v2/molecules/	0.009
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:14:09	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:14:09	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:14:09	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:14:09	ERROR	400	testclient	POST	/api/v2/molecules/file	0.004
+	/-- Could not parse the file data --/
+
+2024-09-09 16:14:09	ERROR	400	testclient	POST	/api/v2/molecules/file	0.008
+	/-- Invalid JSON --/
+
+2024-09-09 16:16:54	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:16:54	INFO	200	testclient	GET	/api/v2/molecules/	0.211
+2024-09-09 16:16:54	INFO	307	testclient	GET	/api/v2/molecules	0.005
+2024-09-09 16:16:54	INFO	200	testclient	GET	/api/v2/molecules/	0.016
+2024-09-09 16:16:55	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:16:55	INFO	201	testclient	POST	/api/v2/molecules/	0.12
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:16:55	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:16:55	INFO	201	testclient	POST	/api/v2/molecules/	0.034
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:16:55	INFO	200	testclient	POST	/api/v2/molecules/search	0.264
+	/-- {"task_id":"d5b5dc23-c1be-4e56-b870-946203456dbb","status":"PENDING"} --/
+
+2024-09-09 16:16:56	INFO	200	testclient	GET	/api/v2/molecules/search/d5b5dc23-c1be-4e56-b870-946203456dbb	0.089
+2024-09-09 16:16:56	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:16:56	INFO	201	testclient	POST	/api/v2/molecules/	0.02
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:16:56	INFO	200	testclient	GET	/api/v2/molecules/1	0.011
+2024-09-09 16:16:57	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 16:16:57	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:16:57	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:16:57	INFO	200	testclient	PUT	/api/v2/molecules/1	0.016
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:16:57	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:16:57	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:16:57	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.03
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:16:57	INFO	200	testclient	POST	/api/v2/molecules/file	0.125
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:16:57	ERROR	404	testclient	GET	/api/v2/molecules/1	0.029
+	/-- Molecule was not found --/
+
+2024-09-09 16:16:57	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.016
+	/-- Molecule was not found --/
+
+2024-09-09 16:16:58	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.028
+	/-- Molecule was not found --/
+
+2024-09-09 16:16:58	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:16:58	ERROR	422	testclient	POST	/api/v2/molecules/	0.022
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:16:58	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:16:58	INFO	201	testclient	POST	/api/v2/molecules/	0.032
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:16:58	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.048
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:16:58	ERROR	400	testclient	POST	/api/v2/molecules/file	0.012
+	/-- Could not parse the file data --/
+
+2024-09-09 16:16:58	ERROR	400	testclient	POST	/api/v2/molecules/file	0.01
+	/-- Invalid JSON --/
+
+2024-09-09 16:20:15	INFO	307	testclient	GET	/api/v2/molecules	0.003
+2024-09-09 16:20:16	INFO	200	testclient	GET	/api/v2/molecules/	1.376
+2024-09-09 16:20:16	INFO	307	testclient	GET	/api/v2/molecules	0.009
+2024-09-09 16:20:16	INFO	200	testclient	GET	/api/v2/molecules/	0.007
+2024-09-09 16:20:17	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:20:17	INFO	201	testclient	POST	/api/v2/molecules/	0.254
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:20:17	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:20:17	INFO	201	testclient	POST	/api/v2/molecules/	0.096
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:20:18	INFO	200	testclient	POST	/api/v2/molecules/search	0.801
+	/-- {"task_id":"aef24b6c-e594-480c-854b-ce106b9c5beb","status":"PENDING"} --/
+
+2024-09-09 16:20:19	INFO	200	testclient	GET	/api/v2/molecules/search/aef24b6c-e594-480c-854b-ce106b9c5beb	0.378
+2024-09-09 16:20:19	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:20:19	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:20:19	INFO	200	testclient	GET	/api/v2/molecules/1	0.02
+2024-09-09 16:20:19	INFO	200	testclient	GET	/api/v2/molecules/1	0.004
+2024-09-09 16:20:19	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:20:19	INFO	201	testclient	POST	/api/v2/molecules/	0.016
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:20:19	INFO	200	testclient	PUT	/api/v2/molecules/1	0.019
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:20:19	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:20:19	INFO	201	testclient	POST	/api/v2/molecules/	0.033
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:20:19	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.023
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:20:20	INFO	200	testclient	POST	/api/v2/molecules/file	0.067
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:20:20	ERROR	404	testclient	GET	/api/v2/molecules/1	0.007
+	/-- Molecule was not found --/
+
+2024-09-09 16:20:20	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.009
+	/-- Molecule was not found --/
+
+2024-09-09 16:20:20	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.018
+	/-- Molecule was not found --/
+
+2024-09-09 16:20:20	INFO	307	testclient	POST	/api/v2/molecules	0.005
+	/-- None --/
+
+2024-09-09 16:20:20	ERROR	422	testclient	POST	/api/v2/molecules/	0.012
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:20:20	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:20:20	INFO	201	testclient	POST	/api/v2/molecules/	0.017
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:20:20	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.039
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:20:20	ERROR	400	testclient	POST	/api/v2/molecules/file	0.009
+	/-- Could not parse the file data --/
+
+2024-09-09 16:20:20	ERROR	400	testclient	POST	/api/v2/molecules/file	0.009
+	/-- Invalid JSON --/
+
+2024-09-09 16:21:25	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:21:25	INFO	200	testclient	GET	/api/v2/molecules/	0.024
+2024-09-09 16:21:25	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:21:25	INFO	200	testclient	GET	/api/v2/molecules/	0.004
+2024-09-09 16:21:25	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:21:25	INFO	201	testclient	POST	/api/v2/molecules/	0.028
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:21:25	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:21:25	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:21:25	INFO	200	testclient	POST	/api/v2/molecules/search	0.081
+	/-- {"task_id":"64c04ed5-5637-4855-b89a-ee01754e0d68","status":"PENDING"} --/
+
+2024-09-09 16:21:25	INFO	200	testclient	GET	/api/v2/molecules/search/64c04ed5-5637-4855-b89a-ee01754e0d68	0.089
+2024-09-09 16:21:26	INFO	307	testclient	POST	/api/v2/molecules	0.004
+	/-- None --/
+
+2024-09-09 16:21:26	INFO	201	testclient	POST	/api/v2/molecules/	0.031
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:21:26	INFO	200	testclient	GET	/api/v2/molecules/1	0.024
+2024-09-09 16:21:26	INFO	200	testclient	GET	/api/v2/molecules/1	0.007
+2024-09-09 16:21:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:21:26	INFO	201	testclient	POST	/api/v2/molecules/	0.033
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:21:26	INFO	200	testclient	PUT	/api/v2/molecules/1	0.021
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:21:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:21:26	INFO	201	testclient	POST	/api/v2/molecules/	0.031
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:21:26	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.02
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:21:26	INFO	200	testclient	POST	/api/v2/molecules/file	0.06
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:21:27	ERROR	404	testclient	GET	/api/v2/molecules/1	0.019
+	/-- Molecule was not found --/
+
+2024-09-09 16:21:27	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.01
+	/-- Molecule was not found --/
+
+2024-09-09 16:21:27	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.025
+	/-- Molecule was not found --/
+
+2024-09-09 16:21:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:21:27	ERROR	422	testclient	POST	/api/v2/molecules/	0.012
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:21:28	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:21:28	INFO	201	testclient	POST	/api/v2/molecules/	0.034
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:21:28	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.034
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:21:28	ERROR	400	testclient	POST	/api/v2/molecules/file	0.027
+	/-- Could not parse the file data --/
+
+2024-09-09 16:21:28	ERROR	400	testclient	POST	/api/v2/molecules/file	0.027
+	/-- Invalid JSON --/
+
+2024-09-09 16:23:51	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:23:51	INFO	200	testclient	GET	/api/v2/molecules/	0.084
+2024-09-09 16:23:51	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:23:51	INFO	200	testclient	GET	/api/v2/molecules/	0.009
+2024-09-09 16:23:51	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:23:51	INFO	201	testclient	POST	/api/v2/molecules/	0.091
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:23:51	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-09-09 16:23:51	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:23:51	INFO	200	testclient	POST	/api/v2/molecules/search	0.148
+	/-- {"task_id":"d81b1a45-5e09-47ff-9338-0347f2b405f5","status":"PENDING"} --/
+
+2024-09-09 16:23:51	INFO	200	testclient	GET	/api/v2/molecules/search/d81b1a45-5e09-47ff-9338-0347f2b405f5	0.048
+2024-09-09 16:23:52	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:23:52	INFO	201	testclient	POST	/api/v2/molecules/	0.027
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:23:52	INFO	200	testclient	GET	/api/v2/molecules/1	0.019
+2024-09-09 16:23:52	INFO	200	testclient	GET	/api/v2/molecules/1	0.007
+2024-09-09 16:23:52	INFO	307	testclient	POST	/api/v2/molecules	0.005
+	/-- None --/
+
+2024-09-09 16:23:52	INFO	201	testclient	POST	/api/v2/molecules/	0.037
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:23:52	INFO	200	testclient	PUT	/api/v2/molecules/1	0.052
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:23:52	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:23:52	INFO	201	testclient	POST	/api/v2/molecules/	0.027
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:23:52	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.018
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:23:53	INFO	200	testclient	POST	/api/v2/molecules/file	0.04
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:23:53	ERROR	404	testclient	GET	/api/v2/molecules/1	0.021
+	/-- Molecule was not found --/
+
+2024-09-09 16:23:53	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.018
+	/-- Molecule was not found --/
+
+2024-09-09 16:23:53	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.016
+	/-- Molecule was not found --/
+
+2024-09-09 16:23:53	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:23:53	ERROR	422	testclient	POST	/api/v2/molecules/	0.008
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:23:53	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 16:23:53	INFO	201	testclient	POST	/api/v2/molecules/	0.013
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:23:53	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.027
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:23:53	ERROR	400	testclient	POST	/api/v2/molecules/file	0.027
+	/-- Could not parse the file data --/
+
+2024-09-09 16:23:53	ERROR	400	testclient	POST	/api/v2/molecules/file	0.011
+	/-- Invalid JSON --/
+
+2024-09-09 16:24:22	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:24:22	INFO	200	testclient	GET	/api/v2/molecules/	0.032
+2024-09-09 16:24:22	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:24:22	INFO	200	testclient	GET	/api/v2/molecules/	0.008
+2024-09-09 16:24:23	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:24:23	INFO	201	testclient	POST	/api/v2/molecules/	0.039
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:24:23	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:24:23	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:24:23	INFO	200	testclient	POST	/api/v2/molecules/search	0.15
+	/-- {"task_id":"a474d47d-d88e-4b60-be15-6b409f110401","status":"PENDING"} --/
+
+2024-09-09 16:24:23	INFO	200	testclient	GET	/api/v2/molecules/search/a474d47d-d88e-4b60-be15-6b409f110401	0.082
+2024-09-09 16:24:23	INFO	307	testclient	POST	/api/v2/molecules	0.004
+	/-- None --/
+
+2024-09-09 16:24:23	INFO	201	testclient	POST	/api/v2/molecules/	0.059
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:24:23	INFO	200	testclient	GET	/api/v2/molecules/1	0.013
+2024-09-09 16:24:23	INFO	200	testclient	GET	/api/v2/molecules/1	0.004
+2024-09-09 16:24:23	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:24:23	INFO	201	testclient	POST	/api/v2/molecules/	0.028
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:24:23	INFO	200	testclient	PUT	/api/v2/molecules/1	0.04
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:24:24	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:24:24	INFO	201	testclient	POST	/api/v2/molecules/	0.035
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:24:24	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.019
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:24:24	INFO	200	testclient	POST	/api/v2/molecules/file	0.029
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:24:24	ERROR	404	testclient	GET	/api/v2/molecules/1	0.014
+	/-- Molecule was not found --/
+
+2024-09-09 16:24:24	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.017
+	/-- Molecule was not found --/
+
+2024-09-09 16:24:24	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.033
+	/-- Molecule was not found --/
+
+2024-09-09 16:24:24	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:24:24	ERROR	422	testclient	POST	/api/v2/molecules/	0.017
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:24:24	INFO	307	testclient	POST	/api/v2/molecules	0.0
+	/-- None --/
+
+2024-09-09 16:24:24	INFO	201	testclient	POST	/api/v2/molecules/	0.011
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:24:24	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.012
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:24:24	ERROR	400	testclient	POST	/api/v2/molecules/file	0.014
+	/-- Could not parse the file data --/
+
+2024-09-09 16:24:24	ERROR	400	testclient	POST	/api/v2/molecules/file	0.009
+	/-- Invalid JSON --/
+
+2024-09-09 16:25:45	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-09-09 16:25:45	INFO	200	testclient	GET	/api/v2/molecules/	0.033
+2024-09-09 16:25:45	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-09-09 16:25:45	INFO	200	testclient	GET	/api/v2/molecules/	0.015
+2024-09-09 16:25:45	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:25:45	INFO	201	testclient	POST	/api/v2/molecules/	0.035
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:25:45	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:25:45	INFO	201	testclient	POST	/api/v2/molecules/	0.01
+	/-- {"message":"Molecule 2 was added to database"} --/
+
+2024-09-09 16:25:45	INFO	200	testclient	POST	/api/v2/molecules/search	0.165
+	/-- {"task_id":"d1389193-ba4e-4f08-b33c-9f124fa5215e","status":"PENDING"} --/
+
+2024-09-09 16:25:45	INFO	200	testclient	GET	/api/v2/molecules/search/d1389193-ba4e-4f08-b33c-9f124fa5215e	0.103
+2024-09-09 16:25:46	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:25:46	INFO	201	testclient	POST	/api/v2/molecules/	0.023
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:25:46	INFO	200	testclient	GET	/api/v2/molecules/1	0.015
+2024-09-09 16:25:46	INFO	200	testclient	GET	/api/v2/molecules/1	0.005
+2024-09-09 16:25:46	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:25:46	INFO	201	testclient	POST	/api/v2/molecules/	0.035
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:25:46	INFO	200	testclient	PUT	/api/v2/molecules/1	0.042
+	/-- {"message":"Molecule 1 was updated"} --/
+
+2024-09-09 16:25:46	INFO	307	testclient	POST	/api/v2/molecules	0.009
+	/-- None --/
+
+2024-09-09 16:25:46	INFO	201	testclient	POST	/api/v2/molecules/	0.032
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:25:46	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- {"message":"Molecule 1 was deleted"} --/
+
+2024-09-09 16:25:46	INFO	200	testclient	POST	/api/v2/molecules/file	0.037
+	/-- {"message":"File was processed. Molecules were uploaded."} --/
+
+2024-09-09 16:25:46	ERROR	404	testclient	GET	/api/v2/molecules/1	0.017
+	/-- Molecule was not found --/
+
+2024-09-09 16:25:46	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.032
+	/-- Molecule was not found --/
+
+2024-09-09 16:25:46	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.023
+	/-- Molecule was not found --/
+
+2024-09-09 16:25:47	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:25:47	ERROR	422	testclient	POST	/api/v2/molecules/	0.028
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-09-09 16:25:47	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-09-09 16:25:47	INFO	201	testclient	POST	/api/v2/molecules/	0.014
+	/-- {"message":"Molecule 1 was added to database"} --/
+
+2024-09-09 16:25:47	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.007
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-09-09 16:25:47	ERROR	400	testclient	POST	/api/v2/molecules/file	0.008
+	/-- Could not parse the file data --/
+
+2024-09-09 16:25:47	ERROR	400	testclient	POST	/api/v2/molecules/file	0.011
+	/-- Invalid JSON --/
+
+2024-09-09 16:25:47	ERROR	400	testclient	POST	/api/v2/molecules/search	0.004
+	/-- Invalid SMILES structure --/
+

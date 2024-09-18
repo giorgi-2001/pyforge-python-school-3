@@ -16,7 +16,7 @@ from sqlalchemy.orm import (
 
 # from app.config import get_db_url
 
-DATABASE_URL = os.getenv("DB_URI")
+DATABASE_URL = os.getenv("DB_URI", "sqlite+aiosqlite:///:memory:")
 
 engine = create_async_engine(DATABASE_URL)
 async_session_maker = async_sessionmaker(engine, expire_on_commit=False)

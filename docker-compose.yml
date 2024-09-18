@@ -81,6 +81,17 @@ services:
       - nginx
     command: alembic upgrade head
 
+  celery_worker:
+    container_name: celery
+    build: .
+    command: celery -A src.celery_worker worker --loglevel=info
+    environment:
+      DB_URI: ${DB_URI}
+    depends_on:
+      - redis
+    volumes:
+      - ./src:/app/src
+
   redis:
     container_name: redis
     image: "redis:alpine"

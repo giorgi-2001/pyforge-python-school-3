@@ -2,52 +2,24 @@ from fastapi import (
     APIRouter, HTTPException, status,
     UploadFile, Depends, Query
 )
-from rdkit import Chem
+
+from celery.result import AsyncResult
+from celery import Task
 from .dao import MoleculeDAO
+
 from .schemas import (
-    MoleculeAdd, MoleculeResponse,
-    MolResWithPagination, PaginationData,
+    MoleculeAdd,
+    MolResWithPagination,
+    PaginationData,
     valid_smiles
 )
+
 from .redis_cache import get_cached_result, set_cache
-from typing import Annotated, AsyncGenerator
+from src.molecules.tasks import add_task
+from ..celery_worker import celery_app
+from typing import Annotated
 import json
 import math
-
-
-async def substructure_search(mol_list: AsyncGenerator, smiles: str):
-    if not valid_smiles(smiles):
-        raise ValueError
-
-    query_mol = Chem.MolFromSmiles(smiles)
-
-    async for record in mol_list:
-        mol = Chem.MolFromSmiles(record.smiles)
-        if mol.HasSubstructMatch(query_mol):
-            yield record
-
-
-async def paginate_sub_search(
-    mol_generator: AsyncGenerator,
-    page: int = 1,
-    limit: int = 2
-):
-    result = []
-    start_index = (page - 1) * limit
-    end_index = page * limit
-    current_index = 0
-    while current_index < end_index:
-        try:
-            mol = await anext(mol_generator)
-        except StopAsyncIteration:
-            break
-
-        if current_index >= start_index:
-            result.append(mol.model_dump())
-
-        current_index += 1
-
-    return result
 
 
 NOT_FOUND_EXEPTION = HTTPException(
@@ -57,6 +29,7 @@ NOT_FOUND_EXEPTION = HTTPException(
 
 
 dao_dependencie = Annotated[MoleculeDAO, Depends(MoleculeDAO)]
+task_dependencie = Annotated[Task, Depends(lambda: add_task)]
 
 
 router = APIRouter()
@@ -68,6 +41,14 @@ async def list_all_molecules(
     page: int = Query(ge=1, default=1),
     limit: int = Query(ge=1, le=100, default=20)
 ) -> MolResWithPagination:
+    cache_key = f"page={str(page)}&limit={str(limit)}"
+
+    result: None | dict = get_cached_result(cache_key)
+
+    if result:
+        result.update({"source": "cache"})
+        return result
+
     count = await dao.molecule_count()
     skip_value = (page - 1) * limit
     all_pages = math.ceil(count / limit)
@@ -77,53 +58,73 @@ async def list_all_molecules(
         offset=skip_value, limit=limit
     )
 
-    return {
-        "pagination_data": PaginationData(
+    pagination_data = PaginationData(
             current_page=page, page_count=all_pages,
             molecule_count=count, page_size=limit,
             has_next_page=has_next_page
-        ),
+        )
 
-        "molecules": [molecule async for molecule in mol_list_generator]
+    response = {
+        "source": "database",
+        "pagination_data": pagination_data.model_dump(),
+        "molecules": [
+            molecule.model_dump() async for molecule in mol_list_generator
+        ]
     }
 
+    set_cache(cache_key, response, 180)
+    return response
 
-@router.get("/search")
-async def get_molecules_by_substructure(
-    smiles: str, dao: dao_dependencie,
+
+@router.post("/search")
+async def add_search_task(
+    add_task: task_dependencie,
+    smiles: str,
     page: int = Query(ge=1, default=1),
     limit: int = Query(ge=1, le=100, default=20)
 ) -> dict:
-    cache_key = f"search={smiles}&page={str(page)}&limit={str(limit)}"
-    cached_result = get_cached_result(cache_key)
-
-    if cached_result:
-        return {"source": "cache", "molecules": cached_result}
-
-    try:
-        mol_list_generator = dao.find_all_molecules()
-        mol_result_generator = substructure_search(mol_list_generator, smiles)
-        result = await paginate_sub_search(
-            mol_generator=mol_result_generator,
-            page=page, limit=limit
-        )
-        set_cache(cache_key, result, 300)
-        return {"source": "db", "molecules": result}
-    except ValueError:
+    if not valid_smiles(smiles):
         raise HTTPException(
             status.HTTP_400_BAD_REQUEST,
             detail="Invalid SMILES structure"
         )
 
+    task = add_task.delay(smiles, page, limit)
+    return {"task_id": task.id, "status": task.status}
+
+
+@router.get("/search/{task_id}")
+async def get_search_results(task_id: str) -> dict:
+    task_result = AsyncResult(task_id, app=celery_app)
+    if task_result.state == 'PENDING':
+        return {"task_id": task_id, "status": "Task is still processing"}
+    elif task_result.state == 'SUCCESS':
+        return {
+            "task_id": task_id,
+            "status": "Task completed",
+            "result": task_result.result
+        }
+    else:
+        return {"task_id": task_id, "status": task_result.state}
+
 
 @router.get("/{id}")
 async def get_molecule_by_id(
     id: int, dao: dao_dependencie
-) -> MoleculeResponse | None:
+) -> dict:
+    cache_key = f"id={id}"
+    molecule = get_cached_result(cache_key)
+
+    if molecule:
+        return {"source": "cache", "result": molecule}
+
     molecule = await dao.find_full_data(id)
+
     if molecule is None:
         raise NOT_FOUND_EXEPTION
-    return molecule
+
+    set_cache(cache_key, molecule.model_dump())
+    return {"source": "database", "result": molecule.model_dump()}
 
 
 @router.post("/", status_code=status.HTTP_201_CREATED)

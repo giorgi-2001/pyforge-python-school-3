@@ -12,5 +12,5 @@ def get_cached_result(key: str):
     return None
 
 
-def set_cache(key: str, value: list, expiration: int = 60):
+def set_cache(key: str, value: dict | list, expiration: int = 60):
     redis_client.setex(key, expiration, json.dumps(value))
