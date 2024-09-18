@@ -145,7 +145,9 @@ def test_upload_file():
             "file": ("molecules", file, "application/json")
         })
     assert response.status_code == 200
-    assert response.json() == molecule_db
+    assert response.json() == {
+        "message": "File was processed. Molecules were uploaded."
+    }
 
 
 # Testing 404 Exeptions

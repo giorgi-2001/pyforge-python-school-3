@@ -1,4 +1,4 @@
-from sqlalchemy import delete, update
+from sqlalchemy import delete, update, func
 from sqlalchemy.future import select
 from .models import Molecule
 from ..database import async_session_maker
@@ -9,11 +9,24 @@ class MoleculeDAO:
     session_maker = async_session_maker
 
     @classmethod
-    async def find_all_molecules(cls):
+    async def molecule_count(cls):
         async with cls.session_maker() as session:
-            query = select(cls.model)
+            query = select(func.count()).select_from(cls.model)
+            result = await session.execute(query)
+            count = result.scalar_one()
+            return count
+
+    @classmethod
+    async def find_all_molecules(
+        cls, offset: int | None = None,
+        limit: int | None = None
+    ):
+        async with cls.session_maker() as session:
+            query = select(cls.model).offset(offset).limit(limit)
             molecules = await session.execute(query)
-            return molecules.scalars().all()
+            for molecule in molecules.scalars().all():
+                yield molecule
+            # return molecules.scalars().all()
 
     @classmethod
     async def find_full_data(cls, molecule_id):

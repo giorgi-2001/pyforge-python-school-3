@@ -84,7 +84,7 @@ jobs:
       - name: Build and push Docker image
         run: |
           docker buildx build --push --platform linux/amd64,linux/arm64 \
-            -t ghcr.io/${{ github.repository }}/app:pr-${{ github.event.number }} .
+            -t ghcr.io/${{ github.repository }}/app:v${{ github.event.number }} .
 
 
 

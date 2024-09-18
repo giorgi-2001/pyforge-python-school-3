@@ -183,4 +183,4 @@ async def upload_file(file: UploadFile):
         id = auto_increment(molecule_db)   # Automatic ID generation
         mol_record["id"] = id
         molecule_db.append(mol_record)
-    return molecule_db
+    return {"message": "File was processed. Molecules were uploaded."}

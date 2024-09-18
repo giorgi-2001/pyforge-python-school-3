@@ -1,0 +1,905 @@
+2024-08-24 17:08:40	ERROR	& is invalid SMILES
+2024-08-24 17:08:40	INFO	400	172.18.0.6	GET	/api/v2/molecules/search	0.085
+2024-08-24 17:11:40	INFO	400	172.18.0.6	GET	/api/v2/molecules/search	0.066
+2024-08-24 17:11:40	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.066
+/-- Invalid SMILES structure --/
+2024-08-24 17:21:44	INFO	200	172.18.0.6	GET	/api/v2/molecules/	0.194
+2024-08-24 17:22:53	INFO	201	172.18.0.6	POST	/api/v2/molecules/	0.04
+	/-- Molecule 14 was added to database --/
+2024-08-24 17:24:37	INFO	201	172.18.0.6	POST	/api/v2/molecules/	0.049
+	/-- Molecule 15 was added to database --/
+2024-08-24 17:25:08	ERROR	422	172.18.0.6	POST	/api/v2/molecules/	1.078
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&&&', 'ctx': {'error': {}}}] --/
+2024-08-24 17:32:24	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.416
+	/-- Invalid SMILES structure --/
+
+2024-08-24 17:32:40	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.389
+	/-- Invalid SMILES structure --/
+
+2024-08-24 18:07:10	ERROR	400	172.18.0.6	GET	/api/v2/molecules/search	0.018
+	/-- Invalid SMILES structure --/
+
+2024-08-24 18:08:12	INFO	200	172.18.0.6	PUT	/api/v2/molecules/12	0.671
+	/-- Molecule 12 was updated --/
+
+2024-08-24 18:13:33	INFO	200	172.18.0.6	GET	/api/v2/molecules/search	0.772
+2024-08-24 18:14:55	INFO	200	172.18.0.6	GET	/api/v2/molecules/search	0.475
+2024-08-24 18:17:27	INFO	200	172.18.0.6	GET	/api/v2/molecules/search	0.34
+2024-08-24 18:19:05	ERROR	404	172.18.0.6	GET	/api/v2/molecules/30	0.301
+	/-- Molecule was not found --/
+
+2024-08-24 18:19:33	INFO	200	172.18.0.6	GET	/api/v2/molecules/12	0.034
+2024-08-28 10:27:41	ERROR	404	172.18.0.5	GET	/favicon.ico	0.241
+	/-- Not Found --/
+
+2024-08-28 10:34:32	INFO	200	172.18.0.5	GET	/docs	0.003
+2024-08-28 10:34:33	INFO	200	172.18.0.5	GET	/openapi.json	0.164
+2024-08-28 10:35:26	INFO	200	172.18.0.5	GET	/api/v2/molecules/search	0.879
+2024-08-28 11:17:38	INFO	200	testclient	GET	/	0.003
+2024-08-28 11:17:38	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:17:38	INFO	200	testclient	GET	/api/v1/molecules/	0.002
+2024-08-28 11:17:42	ERROR	404	testclient	GET	/api/v1/molecules/1	0.004
+	/-- Molecule does not exist --/
+
+2024-08-28 11:17:42	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.017
+	/-- Molecule does not exist --/
+
+2024-08-28 11:17:42	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.005
+	/-- Molecule does not exist --/
+
+2024-08-28 11:17:42	ERROR	422	testclient	GET	/api/v1/molecules/search	0.062
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:17:43	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:17:43	ERROR	400	testclient	GET	/api/v1/molecules/search	0.003
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:17:44	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.015
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:17:44	ERROR	400	testclient	POST	/api/v1/molecules/file	0.003
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:17:44	ERROR	400	testclient	POST	/api/v1/molecules/file	0.002
+	/-- Invalid JSON --/
+
+2024-08-28 11:17:44	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-08-28 11:17:44	INFO	200	testclient	GET	/api/v2/molecules/	0.036
+2024-08-28 11:17:48	INFO	200	testclient	GET	/api/v2/molecules/1	0.015
+2024-08-28 11:17:48	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-08-28 11:17:48	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-08-28 11:17:49	ERROR	400	testclient	POST	/api/v2/molecules/file	0.012
+	/-- Could not parse the file data --/
+
+2024-08-28 11:17:49	ERROR	400	testclient	POST	/api/v1/molecules/file	0.005
+	/-- Invalid JSON --/
+
+2024-08-28 11:17:49	ERROR	400	testclient	GET	/api/v2/molecules/search	0.006
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:21:24	INFO	200	testclient	GET	/	0.006
+2024-08-28 11:21:24	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:21:24	INFO	200	testclient	GET	/api/v1/molecules/	0.003
+2024-08-28 11:21:28	ERROR	404	testclient	GET	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:21:28	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.007
+	/-- Molecule does not exist --/
+
+2024-08-28 11:21:28	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:21:28	ERROR	422	testclient	GET	/api/v1/molecules/search	0.004
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:21:29	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.002
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:21:29	ERROR	400	testclient	GET	/api/v1/molecules/search	0.005
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:21:29	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.004
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:21:29	ERROR	400	testclient	POST	/api/v1/molecules/file	0.015
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:21:29	ERROR	400	testclient	POST	/api/v1/molecules/file	0.005
+	/-- Invalid JSON --/
+
+2024-08-28 11:21:29	INFO	307	testclient	GET	/api/v2/molecules	0.005
+2024-08-28 11:21:29	INFO	200	testclient	GET	/api/v2/molecules/	0.039
+2024-08-28 11:21:33	INFO	200	testclient	GET	/api/v2/molecules/1	0.022
+2024-08-28 11:21:33	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-08-28 11:21:33	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.01
+	/-- Molecule was not found --/
+
+2024-08-28 11:21:34	ERROR	400	testclient	POST	/api/v2/molecules/file	0.005
+	/-- Could not parse the file data --/
+
+2024-08-28 11:21:34	ERROR	400	testclient	POST	/api/v1/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-08-28 11:21:35	ERROR	400	testclient	GET	/api/v2/molecules/search	0.003
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:25:44	INFO	200	testclient	GET	/	0.005
+2024-08-28 11:25:45	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:25:45	INFO	200	testclient	GET	/api/v1/molecules/	0.002
+2024-08-28 11:25:49	ERROR	404	testclient	GET	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:25:49	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.007
+	/-- Molecule does not exist --/
+
+2024-08-28 11:25:50	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:25:51	ERROR	422	testclient	GET	/api/v1/molecules/search	0.001
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:25:52	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.014
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:25:54	ERROR	400	testclient	GET	/api/v1/molecules/search	0.002
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:25:55	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.002
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:25:55	ERROR	400	testclient	POST	/api/v1/molecules/file	0.003
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:25:56	ERROR	400	testclient	POST	/api/v1/molecules/file	0.002
+	/-- Invalid JSON --/
+
+2024-08-28 11:25:57	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-08-28 11:25:57	INFO	200	testclient	GET	/api/v2/molecules/	0.039
+2024-08-28 11:26:02	INFO	200	testclient	GET	/api/v2/molecules/1	0.015
+2024-08-28 11:26:02	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.016
+	/-- Molecule 1 was deleted --/
+
+2024-08-28 11:26:03	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.01
+	/-- Molecule was not found --/
+
+2024-08-28 11:26:05	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Could not parse the file data --/
+
+2024-08-28 11:26:06	ERROR	400	testclient	POST	/api/v1/molecules/file	0.002
+	/-- Invalid JSON --/
+
+2024-08-28 11:26:07	ERROR	400	testclient	GET	/api/v2/molecules/search	0.005
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:27:40	INFO	200	testclient	GET	/	0.004
+2024-08-28 11:27:40	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:27:40	INFO	200	testclient	GET	/api/v1/molecules/	0.002
+2024-08-28 11:27:43	ERROR	404	testclient	GET	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:27:44	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.005
+	/-- Molecule does not exist --/
+
+2024-08-28 11:27:44	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:27:44	ERROR	422	testclient	GET	/api/v1/molecules/search	0.001
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:27:44	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:27:44	ERROR	400	testclient	GET	/api/v1/molecules/search	0.002
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:27:45	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.004
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:27:45	ERROR	400	testclient	POST	/api/v1/molecules/file	0.009
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:27:45	ERROR	400	testclient	POST	/api/v1/molecules/file	0.002
+	/-- Invalid JSON --/
+
+2024-08-28 11:27:45	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-08-28 11:27:45	INFO	200	testclient	GET	/api/v2/molecules/	0.015
+2024-08-28 11:27:49	INFO	200	testclient	GET	/api/v2/molecules/1	0.016
+2024-08-28 11:27:49	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.009
+	/-- Molecule was not found --/
+
+2024-08-28 11:27:49	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.021
+	/-- Molecule was not found --/
+
+2024-08-28 11:27:51	ERROR	400	testclient	POST	/api/v2/molecules/file	0.006
+	/-- Could not parse the file data --/
+
+2024-08-28 11:27:51	ERROR	400	testclient	POST	/api/v1/molecules/file	0.003
+	/-- Invalid JSON --/
+
+2024-08-28 11:27:51	ERROR	400	testclient	GET	/api/v2/molecules/search	0.003
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:32:02	INFO	200	testclient	GET	/	0.003
+2024-08-28 11:32:02	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:32:02	INFO	200	testclient	GET	/api/v1/molecules/	0.004
+2024-08-28 11:32:07	ERROR	404	testclient	GET	/api/v1/molecules/1	0.003
+	/-- Molecule does not exist --/
+
+2024-08-28 11:32:07	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.006
+	/-- Molecule does not exist --/
+
+2024-08-28 11:32:07	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:32:07	ERROR	422	testclient	GET	/api/v1/molecules/search	0.007
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:32:08	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.002
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:32:08	ERROR	400	testclient	GET	/api/v1/molecules/search	0.005
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:32:09	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.003
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:32:09	ERROR	400	testclient	POST	/api/v1/molecules/file	0.006
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:32:09	ERROR	400	testclient	POST	/api/v1/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-08-28 11:32:09	INFO	307	testclient	GET	/api/v2/molecules	0.005
+2024-08-28 11:32:09	INFO	200	testclient	GET	/api/v2/molecules/	0.033
+2024-08-28 11:32:16	INFO	200	testclient	GET	/api/v2/molecules/1	0.019
+2024-08-28 11:32:16	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.019
+	/-- Molecule was not found --/
+
+2024-08-28 11:32:17	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.017
+	/-- Molecule was not found --/
+
+2024-08-28 11:32:18	ERROR	400	testclient	POST	/api/v2/molecules/file	0.008
+	/-- Could not parse the file data --/
+
+2024-08-28 11:32:18	ERROR	400	testclient	POST	/api/v1/molecules/file	0.014
+	/-- Invalid JSON --/
+
+2024-08-28 11:32:18	ERROR	400	testclient	GET	/api/v2/molecules/search	0.004
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:39:03	INFO	200	testclient	GET	/	0.006
+2024-08-28 11:39:03	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:39:03	INFO	200	testclient	GET	/api/v1/molecules/	0.002
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	201	testclient	POST	/api/v1/molecules/	0.006
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	200	testclient	GET	/api/v1/molecules/search	0.007
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	201	testclient	POST	/api/v1/molecules/	0.003
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	200	testclient	GET	/api/v1/molecules/0	0.002
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	201	testclient	POST	/api/v1/molecules/	0.006
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.003
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	201	testclient	POST	/api/v1/molecules/	0.007
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	200	testclient	PUT	/api/v1/molecules/0	0.007
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	201	testclient	POST	/api/v1/molecules/	0.006
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	200	testclient	DELETE	/api/v1/molecules/0	0.004
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	200	testclient	POST	/api/v1/molecules/file	0.007
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	404	testclient	GET	/api/v1/molecules/1	0.008
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.009
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.007
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	422	testclient	GET	/api/v1/molecules/search	0.001
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	422	testclient	POST	/api/v1/molecules/	0.011
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.004
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	400	testclient	GET	/api/v1/molecules/search	0.005
+	/-- None --/
+
+2024-08-28 11:39:03	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	422	testclient	POST	/api/v1/molecules/	0.003
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.015
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	400	testclient	POST	/api/v1/molecules/file	0.01
+	/-- None --/
+
+2024-08-28 11:39:03	ERROR	400	testclient	POST	/api/v1/molecules/file	0.005
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-08-28 11:39:04	INFO	200	testclient	GET	/api/v2/molecules/	0.041
+2024-08-28 11:39:04	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	201	testclient	POST	/api/v2/molecules/	0.032
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	201	testclient	POST	/api/v2/molecules/	0.031
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	200	testclient	GET	/api/v2/molecules/search	0.011
+2024-08-28 11:39:04	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	201	testclient	POST	/api/v2/molecules/	0.016
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	200	testclient	GET	/api/v2/molecules/1	0.011
+2024-08-28 11:39:04	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	200	testclient	PUT	/api/v2/molecules/1	0.017
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	201	testclient	POST	/api/v2/molecules/	0.008
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.014
+	/-- None --/
+
+2024-08-28 11:39:04	INFO	200	testclient	POST	/api/v2/molecules/file	0.043
+	/-- None --/
+
+2024-08-28 11:39:04	ERROR	404	testclient	GET	/api/v2/molecules/1	0.034
+	/-- None --/
+
+2024-08-28 11:39:04	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.01
+	/-- None --/
+
+2024-08-28 11:39:05	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.027
+	/-- None --/
+
+2024-08-28 11:39:05	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:39:05	ERROR	422	testclient	POST	/api/v2/molecules/	0.009
+	/-- None --/
+
+2024-08-28 11:39:05	INFO	307	testclient	POST	/api/v2/molecules	0.007
+	/-- None --/
+
+2024-08-28 11:39:05	INFO	201	testclient	POST	/api/v2/molecules/	0.009
+	/-- None --/
+
+2024-08-28 11:39:05	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.006
+	/-- None --/
+
+2024-08-28 11:39:05	ERROR	400	testclient	POST	/api/v2/molecules/file	0.023
+	/-- None --/
+
+2024-08-28 11:39:05	ERROR	400	testclient	POST	/api/v1/molecules/file	0.003
+	/-- None --/
+
+2024-08-28 11:39:05	ERROR	400	testclient	GET	/api/v2/molecules/search	0.003
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	200	testclient	GET	/	0.01
+2024-08-28 11:41:25	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:41:25	INFO	200	testclient	GET	/api/v1/molecules/	0.003
+2024-08-28 11:41:25	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	201	testclient	POST	/api/v1/molecules/	0.011
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	200	testclient	GET	/api/v1/molecules/search	0.006
+2024-08-28 11:41:25	INFO	307	testclient	POST	/api/v1/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	201	testclient	POST	/api/v1/molecules/	0.007
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	200	testclient	GET	/api/v1/molecules/0	0.007
+2024-08-28 11:41:25	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	201	testclient	POST	/api/v1/molecules/	0.006
+	/-- None --/
+
+2024-08-28 11:41:25	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v1/molecules/	0.003
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	PUT	/api/v1/molecules/0	0.006
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v1/molecules/	0.004
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	DELETE	/api/v1/molecules/0	0.003
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	POST	/api/v1/molecules/file	0.006
+	/-- None --/
+
+2024-08-28 11:41:26	ERROR	404	testclient	GET	/api/v1/molecules/1	0.003
+	/-- Molecule does not exist --/
+
+2024-08-28 11:41:26	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.006
+	/-- Molecule does not exist --/
+
+2024-08-28 11:41:26	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.007
+	/-- Molecule does not exist --/
+
+2024-08-28 11:41:26	ERROR	422	testclient	GET	/api/v1/molecules/search	0.002
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	ERROR	422	testclient	POST	/api/v1/molecules/	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:41:26	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:41:26	ERROR	400	testclient	GET	/api/v1/molecules/search	0.012
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	ERROR	422	testclient	POST	/api/v1/molecules/	0.01
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:41:26	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.013
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:41:26	ERROR	400	testclient	POST	/api/v1/molecules/file	0.006
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:41:26	ERROR	400	testclient	POST	/api/v1/molecules/file	0.003
+	/-- Invalid JSON --/
+
+2024-08-28 11:41:26	INFO	307	testclient	GET	/api/v2/molecules	0.002
+2024-08-28 11:41:26	INFO	200	testclient	GET	/api/v2/molecules/	0.03
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v2/molecules/	0.017
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	GET	/api/v2/molecules/search	0.009
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v2/molecules/	0.012
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	GET	/api/v2/molecules/1	0.011
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v2/molecules/	0.008
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	PUT	/api/v2/molecules/1	0.028
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	201	testclient	POST	/api/v2/molecules/	0.016
+	/-- None --/
+
+2024-08-28 11:41:26	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.015
+	/-- None --/
+
+2024-08-28 11:41:27	INFO	200	testclient	POST	/api/v2/molecules/file	0.041
+	/-- None --/
+
+2024-08-28 11:41:27	ERROR	404	testclient	GET	/api/v2/molecules/1	0.006
+	/-- Molecule was not found --/
+
+2024-08-28 11:41:27	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.01
+	/-- Molecule was not found --/
+
+2024-08-28 11:41:27	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- Molecule was not found --/
+
+2024-08-28 11:41:27	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:41:27	ERROR	422	testclient	POST	/api/v2/molecules/	0.005
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-08-28 11:41:27	INFO	307	testclient	POST	/api/v2/molecules	0.003
+	/-- None --/
+
+2024-08-28 11:41:27	INFO	201	testclient	POST	/api/v2/molecules/	0.018
+	/-- None --/
+
+2024-08-28 11:41:27	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.006
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:41:27	ERROR	400	testclient	POST	/api/v2/molecules/file	0.008
+	/-- Could not parse the file data --/
+
+2024-08-28 11:41:27	ERROR	400	testclient	POST	/api/v1/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-08-28 11:41:27	ERROR	400	testclient	GET	/api/v2/molecules/search	0.011
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:45:01	INFO	200	testclient	GET	/	0.006
+2024-08-28 11:45:02	INFO	307	testclient	GET	/api/v1/molecules	0.001
+2024-08-28 11:45:02	INFO	200	testclient	GET	/api/v1/molecules/	0.002
+2024-08-28 11:45:02	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	201	testclient	POST	/api/v1/molecules/	0.008
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	200	testclient	GET	/api/v1/molecules/search	0.005
+2024-08-28 11:45:02	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	201	testclient	POST	/api/v1/molecules/	0.005
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	200	testclient	GET	/api/v1/molecules/0	0.008
+2024-08-28 11:45:02	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	201	testclient	POST	/api/v1/molecules/	0.005
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	201	testclient	POST	/api/v1/molecules/	0.004
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	200	testclient	PUT	/api/v1/molecules/0	0.004
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	201	testclient	POST	/api/v1/molecules/	0.006
+	/-- None --/
+
+2024-08-28 11:45:02	INFO	200	testclient	DELETE	/api/v1/molecules/0	0.005
+	/-- None --/
+
+2024-08-28 11:45:03	ERROR	404	testclient	GET	/api/v1/molecules/1	0.002
+	/-- Molecule does not exist --/
+
+2024-08-28 11:45:03	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.009
+	/-- Molecule does not exist --/
+
+2024-08-28 11:45:03	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.003
+	/-- Molecule does not exist --/
+
+2024-08-28 11:45:03	ERROR	422	testclient	GET	/api/v1/molecules/search	0.011
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v1/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:45:03	ERROR	422	testclient	POST	/api/v1/molecules/	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:45:03	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:45:03	ERROR	400	testclient	GET	/api/v1/molecules/search	0.005
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:03	ERROR	422	testclient	POST	/api/v1/molecules/	0.028
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:45:03	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.013
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:45:03	ERROR	400	testclient	POST	/api/v1/molecules/file	0.005
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:45:03	ERROR	400	testclient	POST	/api/v1/molecules/file	0.005
+	/-- Invalid JSON --/
+
+2024-08-28 11:45:03	INFO	307	testclient	GET	/api/v2/molecules	0.001
+2024-08-28 11:45:03	INFO	200	testclient	GET	/api/v2/molecules/	0.024
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:03	INFO	201	testclient	POST	/api/v2/molecules/	0.017
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:03	INFO	201	testclient	POST	/api/v2/molecules/	0.012
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:45:03	INFO	200	testclient	GET	/api/v2/molecules/search	0.011
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:03	INFO	201	testclient	POST	/api/v2/molecules/	0.009
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:45:03	INFO	200	testclient	GET	/api/v2/molecules/1	0.015
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v2/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:45:03	INFO	201	testclient	POST	/api/v2/molecules/	0.026
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:45:03	INFO	200	testclient	PUT	/api/v2/molecules/1	0.024
+	/-- Molecule 1 was updated --/
+
+2024-08-28 11:45:03	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:04	INFO	201	testclient	POST	/api/v2/molecules/	0.025
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:45:04	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.021
+	/-- Molecule 1 was deleted --/
+
+2024-08-28 11:45:04	INFO	200	testclient	GET	/api/v2/molecules/1	0.008
+2024-08-28 11:45:04	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.009
+	/-- Molecule was not found --/
+
+2024-08-28 11:45:04	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.013
+	/-- Molecule was not found --/
+
+2024-08-28 11:45:04	INFO	307	testclient	POST	/api/v2/molecules	0.003
+	/-- None --/
+
+2024-08-28 11:45:04	ERROR	422	testclient	POST	/api/v2/molecules/	0.011
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-08-28 11:45:04	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:45:04	INFO	201	testclient	POST	/api/v2/molecules/	0.023
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:45:05	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.011
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:45:05	ERROR	400	testclient	POST	/api/v2/molecules/file	0.017
+	/-- Could not parse the file data --/
+
+2024-08-28 11:45:05	ERROR	400	testclient	POST	/api/v1/molecules/file	0.002
+	/-- Invalid JSON --/
+
+2024-08-28 11:45:05	ERROR	400	testclient	GET	/api/v2/molecules/search	0.006
+	/-- Invalid SMILES structure --/
+
+2024-08-28 11:49:31	INFO	200	testclient	GET	/	0.003
+2024-08-28 11:49:31	INFO	307	testclient	GET	/api/v1/molecules	0.002
+2024-08-28 11:49:31	INFO	200	testclient	GET	/api/v1/molecules/	0.004
+2024-08-28 11:49:31	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	201	testclient	POST	/api/v1/molecules/	0.013
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	200	testclient	GET	/api/v1/molecules/search	0.007
+2024-08-28 11:49:31	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	201	testclient	POST	/api/v1/molecules/	0.027
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	200	testclient	GET	/api/v1/molecules/0	0.004
+2024-08-28 11:49:31	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	201	testclient	POST	/api/v1/molecules/	0.005
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	201	testclient	POST	/api/v1/molecules/	0.003
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	200	testclient	PUT	/api/v1/molecules/0	0.005
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	201	testclient	POST	/api/v1/molecules/	0.006
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	200	testclient	DELETE	/api/v1/molecules/0	0.002
+	/-- None --/
+
+2024-08-28 11:49:31	INFO	200	testclient	POST	/api/v1/molecules/file	0.007
+	/-- File was processed. Molecules were uploaded. --/
+
+2024-08-28 11:49:31	ERROR	404	testclient	GET	/api/v1/molecules/1	0.004
+	/-- Molecule does not exist --/
+
+2024-08-28 11:49:31	ERROR	404	testclient	PUT	/api/v1/molecules/1	0.005
+	/-- Molecule does not exist --/
+
+2024-08-28 11:49:32	ERROR	404	testclient	DELETE	/api/v1/molecules/1	0.003
+	/-- Molecule does not exist --/
+
+2024-08-28 11:49:32	ERROR	422	testclient	GET	/api/v1/molecules/search	0.009
+	/-- [{'type': 'missing', 'loc': ['query', 'substructure'], 'msg': 'Field required', 'input': None}] --/
+
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v1/molecules	0.002
+	/-- None --/
+
+2024-08-28 11:49:32	ERROR	422	testclient	POST	/api/v1/molecules/	0.003
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:49:32	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.002
+	/-- [{'type': 'missing', 'loc': ['body', 'name'], 'msg': 'Field required', 'input': {}}, {'type': 'missing', 'loc': ['body', 'smiles'], 'msg': 'Field required', 'input': {}}] --/
+
+2024-08-28 11:49:32	ERROR	400	testclient	GET	/api/v1/molecules/search	0.004
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v1/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:32	ERROR	422	testclient	POST	/api/v1/molecules/	0.007
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:49:32	ERROR	422	testclient	PUT	/api/v1/molecules/0	0.004
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&A', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:49:32	ERROR	400	testclient	POST	/api/v1/molecules/file	0.007
+	/-- Invalid SMILES format --/
+
+2024-08-28 11:49:32	ERROR	400	testclient	POST	/api/v1/molecules/file	0.004
+	/-- Invalid JSON --/
+
+2024-08-28 11:49:32	INFO	307	testclient	GET	/api/v2/molecules	0.007
+2024-08-28 11:49:32	INFO	200	testclient	GET	/api/v2/molecules/	0.033
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:32	INFO	201	testclient	POST	/api/v2/molecules/	0.016
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:32	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:49:32	INFO	200	testclient	GET	/api/v2/molecules/search	0.008
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:32	INFO	201	testclient	POST	/api/v2/molecules/	0.009
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:49:32	INFO	200	testclient	GET	/api/v2/molecules/1	0.012
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:32	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:49:32	INFO	200	testclient	PUT	/api/v2/molecules/1	0.015
+	/-- Molecule 1 was updated --/
+
+2024-08-28 11:49:32	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:32	INFO	201	testclient	POST	/api/v2/molecules/	0.021
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:49:32	INFO	200	testclient	DELETE	/api/v2/molecules/1	0.017
+	/-- Molecule 1 was deleted --/
+
+2024-08-28 11:49:32	INFO	200	testclient	POST	/api/v2/molecules/file	0.048
+	/-- File was processed. Molecules were uploaded. --/
+
+2024-08-28 11:49:32	ERROR	404	testclient	GET	/api/v2/molecules/1	0.008
+	/-- Molecule was not found --/
+
+2024-08-28 11:49:33	ERROR	404	testclient	DELETE	/api/v2/molecules/1	0.02
+	/-- Molecule was not found --/
+
+2024-08-28 11:49:33	ERROR	404	testclient	PUT	/api/v2/molecules/1	0.024
+	/-- Molecule was not found --/
+
+2024-08-28 11:49:33	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:33	ERROR	422	testclient	POST	/api/v2/molecules/	0.003
+	/-- [{'type': 'model_attributes_type', 'loc': ['body'], 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': ''}] --/
+
+2024-08-28 11:49:33	INFO	307	testclient	POST	/api/v2/molecules	0.001
+	/-- None --/
+
+2024-08-28 11:49:33	INFO	201	testclient	POST	/api/v2/molecules/	0.015
+	/-- Molecule 1 was added to database --/
+
+2024-08-28 11:49:33	ERROR	422	testclient	PUT	/api/v2/molecules/1	0.005
+	/-- [{'type': 'value_error', 'loc': ['body', 'smiles'], 'msg': 'Value error, Invalid SMILES structure', 'input': '&&', 'ctx': {'error': {}}}] --/
+
+2024-08-28 11:49:33	ERROR	400	testclient	POST	/api/v2/molecules/file	0.312
+	/-- Could not parse the file data --/
+
+2024-08-28 11:49:33	ERROR	400	testclient	POST	/api/v1/molecules/file	0.003
+	/-- Invalid JSON --/
+
+2024-08-28 11:49:33	ERROR	400	testclient	GET	/api/v2/molecules/search	0.011
+	/-- Invalid SMILES structure --/
+

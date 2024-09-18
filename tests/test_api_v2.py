@@ -43,12 +43,13 @@ def client():
 # Testing API
 
 @pytest.mark.asyncio
-async def test_get_molecules(client: TestClient):
+async def test_list_all_molecules(client: TestClient):
     await setup_function()
     response = client.get(BASE_URL)
     await teardown_function()
     assert response.status_code == 200
-    assert response.json() == []
+    data = response.json()
+    assert data["molecules"] == []
 
 
 @pytest.mark.asyncio
@@ -64,7 +65,7 @@ async def test_add_molecule(client: TestClient):
 @pytest.mark.asyncio
 async def test_get_molecules_by_substructure(client: TestClient):
     await setup_function()
-    mol = {"name": "alcohol", "smiles": "CCO"}
+    mol = {"name": "ethanol", "smiles": "CCO"}
     client.post(BASE_URL, json=mol)
     response = client.get(BASE_URL + "/search?smiles=O")
     await teardown_function()
@@ -72,7 +73,7 @@ async def test_get_molecules_by_substructure(client: TestClient):
     list_with_mol = response.json()
     mol_from_list = list_with_mol[0]
     assert mol_from_list.get("id") == 1
-    assert mol_from_list.get("name") == "alcohol"
+    assert mol_from_list.get("name") == "ethanol"
     assert mol_from_list.get("smiles") == "CCO"
 
 
@@ -94,7 +95,7 @@ async def test_get_molecule_by_id(client: TestClient):
 async def test_update_molecule(client: TestClient):
     await setup_function()
     mol = {"name": "methane", "smiles": "C"}
-    updated_mol = {"name": "alcohol", "smiles": "CCO"}
+    updated_mol = {"name": "ethanol", "smiles": "CCO"}
     client.post(BASE_URL, json=mol)
     response = client.put(BASE_URL + "/1", json=updated_mol)
     await teardown_function()
@@ -168,7 +169,7 @@ async def test_add_molecule_pydantic(client: TestClient):
 async def test_update_molecule_pydantic(client: TestClient):
     await setup_function()
     mol = {"name": "methane", "smiles": "C"}
-    updated_mol = {"name": "alcohol", "smiles": "&&"}
+    updated_mol = {"name": "ethanol", "smiles": "&&"}
     client.post(BASE_URL, json=mol)
     response = client.put(BASE_URL + "/1", json=updated_mol)
     await teardown_function()
