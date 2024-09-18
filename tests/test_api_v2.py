@@ -3,6 +3,7 @@ from fastapi.testclient import TestClient
 from src.molecules.models import Base
 from src.molecules.router_v2 import MoleculeDAO
 from src.main import app
+from src.molecules.redis_cache import redis_client
 from io import BytesIO
 import pytest
 import json
@@ -23,6 +24,7 @@ async def setup_function():
 async def teardown_function():
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.drop_all)
+    redis_client.flushall()
 
 
 class MockDAO(MoleculeDAO):
@@ -63,18 +65,33 @@ async def test_add_molecule(client: TestClient):
 
 
 @pytest.mark.asyncio
-async def test_get_molecules_by_substructure(client: TestClient):
+async def test_get_molecules_by_substructure1(client: TestClient):
     await setup_function()
     mol = {"name": "ethanol", "smiles": "CCO"}
     client.post(BASE_URL, json=mol)
     response = client.get(BASE_URL + "/search?smiles=O")
+    assert response.status_code == 200
+    result = response.json()
+    molecule = result.get("molecules")[0]
+    source = result.get("source")
+    assert source == "db"
+    assert molecule.get("id") == 1
+    assert molecule.get("name") == "ethanol"
+    assert molecule.get("smiles") == "CCO"
+
+
+@pytest.mark.asyncio
+async def test_get_molecules_by_substructure2(client: TestClient):
+    response = client.get(BASE_URL + "/search?smiles=O")
     await teardown_function()
     assert response.status_code == 200
-    list_with_mol = response.json()
-    mol_from_list = list_with_mol[0]
-    assert mol_from_list.get("id") == 1
-    assert mol_from_list.get("name") == "ethanol"
-    assert mol_from_list.get("smiles") == "CCO"
+    result = response.json()
+    molecule = result.get("molecules")[0]
+    source = result.get("source")
+    assert source == "cache"
+    assert molecule.get("id") == 1
+    assert molecule.get("name") == "ethanol"
+    assert molecule.get("smiles") == "CCO"
 
 
 @pytest.mark.asyncio

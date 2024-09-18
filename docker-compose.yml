@@ -81,6 +81,12 @@ services:
       - nginx
     command: alembic upgrade head
 
+  redis:
+    container_name: redis
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
 volumes:
   pgdata:
     driver: local
