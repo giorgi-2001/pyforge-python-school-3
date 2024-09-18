@@ -2,3 +2,4 @@ __pycache__/
 env
 playground.py
 .pytest_cache
+.env

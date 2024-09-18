@@ -4,4 +4,9 @@ python-multipart
 rdkit
 sqlalchemy
 pytest
+pytest-asyncio
 httpx
+alembic
+asyncpg
+aiosqlite  
+pydantic-settings

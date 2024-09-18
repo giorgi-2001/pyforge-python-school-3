@@ -1,8 +1,13 @@
 import pytest
 from fastapi.testclient import TestClient
-from src.main import (app, molecule_db, auto_increment,
-                      valid_smiles, substructure_search)
-from src.models import MolRecord
+from src.main import app
+from src.molecules.router_v1 import (
+    molecule_db,
+    auto_increment,
+    valid_smiles,
+    substructure_search,
+)
+from src.molecules.schemas import MoleculeAdd
 import json
 from io import BytesIO
 import os
@@ -45,7 +50,7 @@ def test_substructure_search_invalid_smiles():
 
 @pytest.fixture()
 def aspirin():
-    return MolRecord(
+    return MoleculeAdd(
         name="acetylsalicylic acid",
         smiles="CC(=O)OC1=CC=CC=C1C(=O)O"
     )
@@ -196,14 +201,12 @@ def test_get_molecules_by_substructure_with_invalid_smiles():
 
 def test_add_molecule_with_invalid_smiles():
     response = client.post("/api/v1/molecules", json=invalid_smiles_molecule)
-    assert response.status_code == 400
-    assert response.json() == {"detail": "Invalid SMILES format"}
+    assert response.status_code == 422
 
 
 def test_update_molecule_with_invalid_smiles():
     response = client.put("/api/v1/molecules/0", json=invalid_smiles_molecule)
-    assert response.status_code == 400
-    assert response.json() == {"detail": "Invalid SMILES format"}
+    assert response.status_code == 422
 
 
 def test_upload_file_with_invalid_smiles():

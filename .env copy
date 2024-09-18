@@ -1,0 +1,8 @@
+# DB_HOST = 'localhost'
+# DB_PORT = '5433'
+
+# Replace with your own env variables
+DB_NAME=molecules
+DB_USER=user
+DB_PASSWORD=password
+DB_URI=postgresql+asyncpg://user:password@postgres:5432/molecules 
