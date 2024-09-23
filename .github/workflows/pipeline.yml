@@ -94,12 +94,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Create PEM file from base64 secret
+        run: |
+          echo "${{ secrets.EC2_PRIVATE_KEY }}" | base64 -d > my-key.pem
+          chmod 600 my-key.pem
+
       - name: Transfer Code to EC2 via SCP
         uses: appleboy/scp-action@v0.1.0
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          key: my-key.pem
           source: "."
           target: "~/app"
 
@@ -108,7 +113,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          key: my-key.pem
           script: |
             sudo apt-get update -y
             cd ~/app
