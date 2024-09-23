@@ -109,7 +109,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: my-key.pem
+          key_path: my-key.pem
           source: "."
           target: "~/app"
 
@@ -118,7 +118,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: my-key.pem
+          key_path: my-key.pem
           script: |
             sudo apt-get update -y
             cd ~/app
