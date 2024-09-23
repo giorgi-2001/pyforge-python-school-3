@@ -86,5 +86,30 @@ jobs:
           docker buildx build --push --platform linux/amd64,linux/arm64 \
             -t ghcr.io/${{ github.repository }}/app:v${{ github.event.number }} .
 
+  deploy-on-ec2:
+      runs-on: ubuntu-latest
 
+      steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Transfer Code to EC2 via SCP
+        uses: appleboy/scp-action@v0.1.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          source: "."
+          target: "~/app"
+
+      - name: Connect via SSH and Install Dependencies
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          script: |
+            sudo apt-get update -y
+            cd ~/app
+            docker-compose up -d --build
 
