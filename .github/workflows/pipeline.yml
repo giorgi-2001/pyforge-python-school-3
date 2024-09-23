@@ -104,7 +104,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
-          key: my-key.pem
+          key_path: my-key.pem
           script: |
             echo "SSH connection successful!"
 
