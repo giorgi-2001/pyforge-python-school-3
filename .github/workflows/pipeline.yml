@@ -99,6 +99,11 @@ jobs:
           echo "${{ secrets.EC2_PRIVATE_KEY }}" | base64 -d > my-key.pem
           chmod 600 my-key.pem
 
+      - name: Check PEM file content
+        run: |
+          echo "Checking PEM file content..."
+          cat my-key.pem
+
       - name: Transfer Code to EC2 via SCP
         uses: appleboy/scp-action@v0.1.0
         with:
