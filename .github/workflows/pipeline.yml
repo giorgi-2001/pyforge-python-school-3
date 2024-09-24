@@ -100,7 +100,7 @@ jobs:
           chmod 600 my-key.pem
 
       - name: Transfer Code to EC2 via SCP
-        uses: appleboy/scp-action@v0.1.0
+        uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
@@ -109,7 +109,7 @@ jobs:
           target: "~/app"
 
       - name: Connect via SSH and Install Dependencies
-        uses: appleboy/ssh-action@v0.1.8
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
