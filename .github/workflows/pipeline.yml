@@ -97,7 +97,7 @@ jobs:
       - name: Create PEM file from base64 secret
         run: |
           echo "${{ secrets.EC2_PRIVATE_KEY }}" | base64 -d > my-key.pem
-          chmod 600 my-key.pem
+          chmod 644 my-key.pem
 
       - name: Transfer Code to EC2 via SCP
         uses: appleboy/scp-action@master
