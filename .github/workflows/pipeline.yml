@@ -130,4 +130,3 @@ jobs:
             sudo apt-get update -y
             cd ~/app
             docker-compose up -d --build
-            exit
