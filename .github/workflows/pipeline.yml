@@ -107,7 +107,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key_path: my-key.pem
           script: |
-            rm -rf ~/app
+            sudo rm -rf ~/app
             mkdir ~/app
             exit
 
