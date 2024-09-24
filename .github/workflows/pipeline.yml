@@ -98,7 +98,7 @@ jobs:
       - name: Create PEM file from base64 secret
         run: |
           echo "${{ secrets.EC2_PRIVATE_KEY }}" | base64 -d > my-key.pem
-          chmod 600 my-key.pem
+          chmod 644 my-key.pem
 
       - name: Connect via SSH and refresh app dir
         uses: appleboy/ssh-action@v1.0.3
