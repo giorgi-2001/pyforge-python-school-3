@@ -131,4 +131,3 @@ jobs:
             cp ~/my_env/.env ~/app/.env
             cd ~/app
             docker-compose up -d --build
-            exit
