@@ -3,3 +3,4 @@ env
 playground.py
 .pytest_cache
 .env
+events.log

@@ -3786,3 +3786,9 @@
 2024-09-09 16:25:47	ERROR	400	testclient	POST	/api/v2/molecules/search	0.004
 	/-- Invalid SMILES structure --/
 
+2024-09-09 17:46:01	INFO	200	172.18.0.2	GET	/docs	0.126
+2024-09-09 17:46:04	INFO	200	172.18.0.2	GET	/openapi.json	0.451
+2024-09-09 17:46:18	INFO	200	172.18.0.2	POST	/api/v2/molecules/search	1.103
+	/-- {"task_id":"e068cea6-b938-44e6-a4df-2963fbeb3f7b","status":"PENDING"} --/
+
+2024-09-09 17:46:31	INFO	200	172.18.0.2	GET	/api/v2/molecules/search/e068cea6-b938-44e6-a4df-2963fbeb3f7b	0.011
