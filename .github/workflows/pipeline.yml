@@ -86,5 +86,48 @@ jobs:
           docker buildx build --push --platform linux/amd64,linux/arm64 \
             -t ghcr.io/${{ github.repository }}/app:v${{ github.event.number }} .
 
+  deploy-on-ec2:
+      name: Deploy on aws EC2 instance
+      runs-on: ubuntu-latest
+      needs: run-tests
 
+      steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
 
+      - name: Create PEM file from base64 secret
+        run: |
+          echo "${{ secrets.EC2_PRIVATE_KEY }}" | base64 -d > my-key.pem
+          chmod 644 my-key.pem
+
+      - name: Connect via SSH and refresh app dir
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key_path: my-key.pem
+          script: |
+            sudo rm -rf ~/app
+            mkdir ~/app
+            exit
+
+      - name: Transfer Code to EC2 via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key_path: my-key.pem
+          source: "."
+          target: "~/app"
+
+      - name: Connect via SSH and run docker-compose
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key_path: my-key.pem
+          script: |
+            sudo apt-get update -y
+            cp ~/my_env/.env ~/app/.env
+            cd ~/app
+            docker-compose up -d --build
